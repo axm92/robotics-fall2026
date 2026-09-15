@@ -49,6 +49,18 @@ The rotation trial results validated my hypothesis. The start to end distance is
 
 The command guard checks the commands given to the robot before it actually makes it to the robot so that it is safe. The final zero command lets the robot know that this is the final command/end of a trial by making it no longer move forward or turn. The timeout is needed is a program doesn't work properly or communication with the robot is lost while it is in motion.
 
+## mission_3.data_to_command
+
+
+
+## mission_3.missing_data_safety
+
+
+
+## mission_3.system_layers
+
+
+
 ## part_1.activity
 
 {'sensor': {'normal': True, 'changed': True}, 'timing': {'normal': True, 'changed': True}, 'hardware': {'normal': True, 'changed': True}}

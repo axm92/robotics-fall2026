@@ -1,9 +1,11 @@
 {
   "checked_evidence_ids": {
-    "mission_1": "bc7cb64046e4293b"
+    "mission_1": "e3b221b9e508ec5a",
+    "mission_2": "0be363b0f547480a"
   },
   "completed_missions": [
-    "mission_1"
+    "mission_1",
+    "mission_2"
   ],
   "lab_id": "week01_ros_foundations",
   "responses": {
@@ -39,6 +41,9 @@
       "straight": "I predict the robot will finish 0.45m straight forward from its starting position.\n\n"
     },
     "mission_2.safety_explanation": "The command guard checks the commands given to the robot before it actually makes it to the robot so that it is safe. The final zero command lets the robot know that this is the final command/end of a trial by making it no longer move forward or turn. The timeout is needed is a program doesn't work properly or communication with the robot is lost while it is in motion.",
+    "mission_3.data_to_command": "",
+    "mission_3.missing_data_safety": "",
+    "mission_3.system_layers": "",
     "part_1.activity": {
       "hardware": {
         "changed": true,
@@ -106,5 +111,5 @@
     "email": "amaya.mangual74@login.cuny.edu",
     "name": "Amaya Mangual"
   },
-  "updated_at": "2026-09-14T05:45:11.795495+00:00"
+  "updated_at": "2026-09-15T02:32:34.483529+00:00"
 }
