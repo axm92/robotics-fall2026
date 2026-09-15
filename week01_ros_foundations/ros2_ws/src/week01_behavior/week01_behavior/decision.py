@@ -7,6 +7,7 @@ to test safety decisions before running the simulated robot.
 from __future__ import annotations
 
 from collections.abc import Sequence
+import math
 
 
 def front_distance(
@@ -20,7 +21,19 @@ def front_distance(
     Return ``None`` when the sector has no valid reading. Angles are measured in
     radians and the front direction is zero radians.
     """
-    raise NotImplementedError("Mission 3: select and validate the front-sector readings")
+
+    validFrontDistances = []
+    for index, distance in enumerate(ranges):
+        angle = angle_min + index * angle_increment
+        inFront = abs(angle) <= half_width_radians
+        isValid = math.isfinite(distance) and distance > 0.0
+
+        if inFront and isValid:
+            validFrontDistances.append(distance)    
+
+    if not validFrontDistances:
+        return None
+    return min(validFrontDistances)
 
 
 def decide_velocity(
@@ -29,5 +42,12 @@ def decide_velocity(
     forward_speed: float,
 ) -> float:
     """Return a bounded forward velocity; missing data must produce a stop."""
-    raise NotImplementedError("Mission 3: implement the move/stop safety rule")
+
+    if distance is None:
+        return 0.0
+    if distance <= stop_distance:
+        return 0.0
+    
+    return max(0.0, min(float(forward_speed), 0.18))
+
 
