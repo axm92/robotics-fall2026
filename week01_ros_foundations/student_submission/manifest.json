@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "lab_id": "week01_ros_foundations",
+  "generated_at": "2026-09-15T22:15:52.121276+00:00",
+  "student": {
+    "name": "Amaya Mangual",
+    "email": "amaya.mangual74@login.cuny.edu"
+  },
+  "completed_missions": [
+    "mission_1",
+    "mission_2",
+    "mission_3"
+  ],
+  "checked_evidence_ids": {
+    "mission_1": "d7fd712b194edefe",
+    "mission_2": "0be363b0f547480a",
+    "mission_3": "2a9cbceeb7db0cf2"
+  },
+  "files": [
+    ".gitkeep",
+    "autosave/responses.json",
+    "autosave/responses.md",
+    "final_reflection.md",
+    "foundations.md",
+    "mission_1/explanation.md",
+    "mission_1/latest_run.json",
+    "mission_1/ros_system_diagram.md",
+    "mission_1/submission.json",
+    "mission_2/explanation.md",
+    "mission_2/latest_run.json",
+    "mission_2/submission.json",
+    "mission_3/explanation.md",
+    "mission_3/latest_run.json",
+    "mission_3/source/package.xml",
+    "mission_3/source/setup.cfg",
+    "mission_3/source/setup.py",
+    "mission_3/source/test/test_decision.py",
+    "mission_3/source/test/test_student_decision.py",
+    "mission_3/source/week01_behavior/decision.py",
+    "mission_3/source/week01_behavior/obstacle_guard.py",
+    "mission_3/submission.json",
+    "student.json"
+  ]
+}

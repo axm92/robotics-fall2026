@@ -1,8 +1,8 @@
 {
-  "evidence_id": "e3b221b9e508ec5a",
+  "evidence_id": "d7fd712b194edefe",
   "graph": {
     "schema_version": 2,
-    "captured_at": "2026-09-15T02:32:13.777661+00:00",
+    "captured_at": "2026-09-15T14:34:02.030695+00:00",
     "nodes": [
       {
         "name": "/course_cmd_vel_guard"
@@ -20,7 +20,7 @@
         "name": "/rviz2"
       },
       {
-        "name": "/transform_listener_impl_5ba032bb7660"
+        "name": "/transform_listener_impl_59721924c320"
       }
     ],
     "topics": [
@@ -128,7 +128,7 @@
           "/robot_state_publisher",
           "/ros_gz_bridge",
           "/rviz2",
-          "/transform_listener_impl_5ba032bb7660"
+          "/transform_listener_impl_59721924c320"
         ]
       },
       {
@@ -152,7 +152,7 @@
           "/robot_state_publisher",
           "/ros_gz_bridge",
           "/rviz2",
-          "/transform_listener_impl_5ba032bb7660"
+          "/transform_listener_impl_59721924c320"
         ],
         "subscribers": []
       },
@@ -189,7 +189,7 @@
           "/ros_gz_bridge"
         ],
         "subscribers": [
-          "/transform_listener_impl_5ba032bb7660"
+          "/transform_listener_impl_59721924c320"
         ]
       },
       {
@@ -201,7 +201,7 @@
           "/robot_state_publisher"
         ],
         "subscribers": [
-          "/transform_listener_impl_5ba032bb7660"
+          "/transform_listener_impl_59721924c320"
         ]
       }
     ],
@@ -423,7 +423,7 @@
         ]
       },
       {
-        "name": "/transform_listener_impl_5ba032bb7660/get_type_description",
+        "name": "/transform_listener_impl_59721924c320/get_type_description",
         "types": [
           "type_description_interfaces/srv/GetTypeDescription"
         ]
@@ -437,23 +437,23 @@
         "angle_increment": 0.01749303564429283,
         "sample_count": 360,
         "finite_count": 327,
-        "minimum_finite_range": 0.5071136355400085
+        "minimum_finite_range": 0.4980636537075043
       },
       "/odom": {
         "frame_id": "odom",
         "child_frame_id": "base_footprint",
         "position": {
-          "x": 9.600784784794968e-09,
-          "y": -2.214038763691489e-21
+          "x": 9.600784780700164e-09,
+          "y": -2.2140387618058013e-21
         },
         "orientation": {
           "x": 0.0,
           "y": 0.0,
-          "z": -2.302523501772694e-13,
+          "z": -2.3026166991783344e-13,
           "w": 1.0
         },
-        "linear_x": 3.8050308177439273e-20,
-        "angular_z": -2.6469779601696886e-19
+        "linear_x": 4.48331892003741e-20,
+        "angular_z": -7.548023089546378e-19
       },
       "/student_cmd_vel": null
     }
@@ -465,7 +465,7 @@
       "/robot_state_publisher",
       "/ros_gz_bridge",
       "/rviz2",
-      "/transform_listener_impl_5ba032bb7660"
+      "/transform_listener_impl_59721924c320"
     ],
     "topics": [
       [
@@ -572,7 +572,7 @@
           "/robot_state_publisher",
           "/ros_gz_bridge",
           "/rviz2",
-          "/transform_listener_impl_5ba032bb7660"
+          "/transform_listener_impl_59721924c320"
         ]
       ],
       [
@@ -596,7 +596,7 @@
           "/robot_state_publisher",
           "/ros_gz_bridge",
           "/rviz2",
-          "/transform_listener_impl_5ba032bb7660"
+          "/transform_listener_impl_59721924c320"
         ],
         []
       ],
@@ -633,7 +633,7 @@
           "/ros_gz_bridge"
         ],
         [
-          "/transform_listener_impl_5ba032bb7660"
+          "/transform_listener_impl_59721924c320"
         ]
       ],
       [
@@ -645,7 +645,7 @@
           "/robot_state_publisher"
         ],
         [
-          "/transform_listener_impl_5ba032bb7660"
+          "/transform_listener_impl_59721924c320"
         ]
       ]
     ]
