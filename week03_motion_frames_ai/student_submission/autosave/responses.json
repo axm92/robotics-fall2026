@@ -1,0 +1,49 @@
+{
+  "checked_evidence_ids": {},
+  "completed_missions": [],
+  "content_version": 2,
+  "lab_id": "week03_motion_frames_ai",
+  "responses": {
+    "mission_3.ai_disclosure": "",
+    "mission_3.assigned_pattern": "rounded_rectangle",
+    "mission_3.assumptions": "",
+    "mission_3.evidence_analysis": "",
+    "mission_3.live_pending": false,
+    "mission_3.modifications": "",
+    "mission_3.original_output": "Describe the intended sequence, speeds, stopping behavior, and measurable success criteria.\n\n",
+    "mission_3.original_prompt": "Describe the intended sequence, speeds, stopping behavior, and measurable success criteria.\n\n",
+    "mission_3.original_source": "Describe the intended sequence, speeds, stopping behavior, and measurable success criteria.\n\n",
+    "mission_3.problems": "",
+    "mission_3.saved_specification": "Describe the intended sequence, speeds, stopping behavior, and measurable success criteria.\n\n",
+    "mission_3.specification": "Describe the intended sequence, speeds, stopping behavior, and measurable success criteria.\n\n",
+    "mission_3.test_plan": "",
+    "walkthrough.completed": [
+      0,
+      1
+    ],
+    "walkthrough.runs": [
+      "forward",
+      "turn",
+      "arc",
+      "stop",
+      "equal",
+      "left_turn",
+      "right_turn",
+      "opposite"
+    ]
+  },
+  "schema_version": 1,
+  "stage": "mission_3",
+  "student": {
+    "course_id": "test",
+    "email": "test@test.com",
+    "name": "Rahj"
+  },
+  "updated_at": "2026-09-17T20:41:23.707345+00:00",
+  "visited_stages": [
+    "intro",
+    "concepts",
+    "mission_3"
+  ],
+  "walkthrough_index": 1
+}
