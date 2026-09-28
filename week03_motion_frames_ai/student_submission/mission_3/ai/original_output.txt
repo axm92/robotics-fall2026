@@ -1,0 +1,68 @@
+Assumptions:
+
+Segment is a simple existing data class/namedtuple with fields linear_x, angular_z, duration (matching the parameter names given), and doesn't need to be redefined — only imported/used.
+pattern_node.py handles actually publishing each segment for its duration in sequence and sending a final zero-velocity command itself — build_pattern only needs to return the list, not do any publishing, timing, or sleeping itself.
+"Brief stop between arcs" means inserting an explicit zero-velocity Segment (linear_x=0, angular_z=0) with a short duration between each arc segment, since the wrapper just plays back whatever list it's given — a stop has to be a real segment in the list, not implied.
+Positive angular_z = left turn, matching the body-frame convention given (+x forward, positive turning left), so the four arcs are +0.5, -0.5, +0.5, -0.5 rad/s in that order.
+Since build_pattern takes a generic pattern_name, other pattern names may be added later by other students/tests — this implementation only owns the 'alternating_arcs' branch and raises ValueError for anything else, without assuming it's the only pattern this function will ever need to support.
+Short stop duration: using 0.2 s as a small, safe pause — long enough to let velocity settle physically, short enough not to meaningfully affect the ~6.3 s total motion budget or approach the 60 s ceiling.
+python
+"""pattern.py — student implementation of build_pattern."""
+
+import math
+
+# Assuming Segment already exists elsewhere in this module or an import, e.g.:
+# from .segment import Segment
+
+
+def build_pattern(pattern_name: str) -> list[Segment]:
+    """Return the ordered Segment list for a named motion pattern."""
+    if pattern_name != 'alternating_arcs':
+        raise ValueError(f'Unknown pattern name: "{pattern_name}"')
+
+    linear_speed = 0.15   # m/s, within 0.22 m/s limit
+    angular_speed = 0.5   # rad/s, within 0.80 rad/s limit
+    turn_angle = math.pi / 4  # 45 degrees in radians
+    arc_duration = turn_angle / angular_speed  # ≈ 1.5708 s per arc
+    stop_duration = 0.2   # brief pause between arcs
+
+    turn_signs = [1, -1, 1, -1]  # +45, -45, +45, -45 (left, right, left, right)
+
+    segments: list[Segment] = []
+    for i, sign in enumerate(turn_signs):
+        segments.append(
+            Segment(
+                linear_x=linear_speed,
+                angular_z=sign * angular_speed,
+                duration=arc_duration,
+            )
+        )
+        # Brief stop after each arc except skip trailing stop after the last one,
+        # since pattern_node.py sends its own final zero command.
+        if i < len(turn_signs) - 1:
+            segments.append(
+                Segment(linear_x=0.0, angular_z=0.0, duration=stop_duration)
+            )
+
+    return segments
+
+Sanity check against limits:
+
+linear_speed = 0.15 ≤ 0.22 ✓
+angular_speed = 0.5 ≤ 0.80 ✓
+Each arc segment duration ≈ 1.5708 s, each stop = 0.2 s — all ≤ 30 s ✓
+Total: 4 × 1.5708 + 3 × 0.2 ≈ 6.88 s, well under 60 s ✓
+Radius check: linear_speed / angular_speed = 0.15 / 0.5 = 0.3 m ✓ matches spec exactly
+Arc length per segment: radius × angle = 0.3 × (π/4) ≈ 0.2356 m ✓ matches "~0.24 m"
+
+Proposed tests (mirroring the style of the Mission 2 test file, so they'd fit naturally alongside course-provided tests):
+
+test_unknown_pattern_raises_value_error — call build_pattern('not_a_real_pattern') and assert it raises ValueError.
+test_returns_four_arc_segments_with_correct_signs — filter the returned list for non-zero angular_z segments, assert there are exactly 4, and assert their signs are [+, -, +, -].
+test_arc_speeds_within_limits — assert every segment's linear_x <= 0.22 and abs(angular_z) <= 0.80.
+test_arc_radius_matches_spec — for each arc segment, assert abs(linear_x / angular_z) ≈ 0.30 within 0.02 m (skip/guard zero-angular_z stop segments to avoid division by zero).
+test_arc_duration_matches_45_degrees — for each arc segment, assert abs(angular_z) * duration ≈ math.pi/4 within 0.04 rad.
+test_all_durations_positive_and_bounded — assert every segment's duration > 0 and <= 30.
+test_total_duration_under_60_seconds — sum all segment durations and assert the total is <= 60.
+test_net_heading_change_is_zero — sum angular_z * duration across all segments and assert it's approximately 0 within tolerance (confirms the four turns cancel out).
+test_no_stop_segment_appended_after_final_arc — assert the last segment in the returned list is an arc (non-zero angular_z), not an explicit stop, since pattern_node.py is responsible for the final zero command.

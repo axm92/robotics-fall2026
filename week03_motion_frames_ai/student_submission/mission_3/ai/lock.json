@@ -1,0 +1,8 @@
+{
+  "locked_at": "2026-09-26T19:00:35.548506+00:00",
+  "pattern": "alternating_arcs",
+  "specification_sha256": "244ca09580522bbb1f332ab380482dc04f59b5bc320a406bf3e6ab6b9a113d28",
+  "prompt_sha256": "a1b208e07fff57504e1a2b1e2de8dc96c8beeaff19e7d20fe3536982fe795bf8",
+  "output_sha256": "cd9a0a1ab5e3989a0f2a597789fd848b4ba3038cd2826d5490ed86fe407e4822",
+  "source_sha256": "55a3d5117bc27c16ed81bd78c6e655dacd7d2deed30f8a703784681ed9b6c663"
+}

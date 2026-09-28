@@ -1,0 +1,141 @@
+{
+  "evidence_id": "6573d4e8452b6c18",
+  "snapshot": {
+    "captured_at": "2026-09-24T02:39:19.675175+00:00",
+    "frame_chain": [
+      "hall_camera",
+      "odom",
+      "base_link",
+      "base_scan",
+      "rear_camera_link"
+    ],
+    "frames": [
+      "odom",
+      "base_link",
+      "base_scan",
+      "rear_camera_link",
+      "hall_camera"
+    ],
+    "point_prompts": {
+      "hall_camera_point": "Transform point (0.5, 0.0, 0.0) from hall_camera to base_link."
+    },
+    "schema_version": 2,
+    "source": "live",
+    "transformed_points": {
+      "hall_camera_point_in_base": {
+        "x": -9.60264517354125e-09,
+        "y": -1.5
+      },
+      "rear_camera_point_in_base": {
+        "x": -1.18,
+        "y": -1.0206624774663903e-11
+      },
+      "scan_point_in_base": {
+        "x": 0.968,
+        "y": 0.0
+      }
+    },
+    "transforms": {
+      "base_scan_to_base_link": {
+        "translation": {
+          "x": -0.032,
+          "y": 0.0,
+          "z": 0.172
+        },
+        "yaw": 0.0
+      },
+      "hall_camera_to_base_link": {
+        "translation": {
+          "x": -9.599862985257708e-09,
+          "y": -2.0,
+          "z": 1.19
+        },
+        "yaw": 1.570796326800461
+      },
+      "rear_camera_to_base_link": {
+        "translation": {
+          "x": -0.18,
+          "y": 0.0,
+          "z": 0.22
+        },
+        "yaw": -3.1415926535795866
+      }
+    }
+  },
+  "camera_evaluation": {
+    "captured_at": "2026-09-26T05:51:01.226049+00:00",
+    "source_sha256": "cc974fd17a78f65da1e405008866d90e7f1dfef4bfc9b36db31aec523cc8e523",
+    "file_present": true,
+    "unit_tests_passed": true,
+    "test_count": 5,
+    "unit_test_output": "test_rejects_wrong_source_frame (test_camera_transform.CameraTransformTests.test_rejects_wrong_source_frame) ... ok\ntest_source_does_not_publish_motion (test_camera_transform.CameraTransformTests.test_source_does_not_publish_motion) ... ok\ntest_unavailable_transform_returns_none (test_camera_transform.CameraTransformTests.test_unavailable_transform_returns_none) ... ok\ntest_uses_buffer_result_including_rotation (test_camera_transform.CameraTransformTests.test_uses_buffer_result_including_rotation) ... ok\ntest_uses_camera_as_source_and_body_as_target (test_camera_transform.CameraTransformTests.test_uses_camera_as_source_and_body_as_target) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.007s\n\nOK\n",
+    "live": {
+      "passed": false,
+      "source": "hall_camera",
+      "target": "base_link",
+      "point": null,
+      "error": ""
+    },
+    "live_passed": false,
+    "source_differs_from_original": true
+  },
+  "live_verification_pending": true,
+  "check": [
+    {
+      "id": "snapshot",
+      "label": "Frame snapshot selected",
+      "passed": true,
+      "actual": "live",
+      "expected": "live or reference"
+    },
+    {
+      "id": "original",
+      "label": "Initial AI response preserved",
+      "passed": true,
+      "actual": "preserved",
+      "expected": "preserved"
+    },
+    {
+      "id": "file",
+      "label": "Camera transform implementation found",
+      "passed": true,
+      "actual": true,
+      "expected": "true"
+    },
+    {
+      "id": "fresh",
+      "label": "Evaluation matches current implementation",
+      "passed": true,
+      "actual": "current",
+      "expected": "current"
+    },
+    {
+      "id": "tests",
+      "label": "Course camera-transform tests pass",
+      "passed": true,
+      "actual": 5,
+      "expected": ">=5 passing"
+    },
+    {
+      "id": "revision",
+      "label": "Implementation revised from initial AI code",
+      "passed": true,
+      "actual": true,
+      "expected": "true"
+    },
+    {
+      "id": "live",
+      "label": "Live transform verified or documented pending",
+      "passed": true,
+      "actual": "pending",
+      "expected": "verified or documented pending"
+    },
+    {
+      "id": "analysis",
+      "label": "Frame, AI, test, and consequence analysis complete",
+      "passed": true,
+      "actual": "complete",
+      "expected": "complete"
+    }
+  ]
+}
