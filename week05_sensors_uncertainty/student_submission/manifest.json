@@ -1,0 +1,37 @@
+{
+  "files": {
+    "autosave/responses.json": "24eeaca63ab5fc0bc625c21163cd3abcc06aa5f304a3b8d9dc320e21d87a7a54",
+    "autosave/responses.md": "6529f340cc7b4114cd548c6a96f8d8c82f5a5cc5a05b166fc04a0b6af4a5975b",
+    "autosave/responses.recovery.182b4b12f0054942bcfe929fd7ec84ee.json": "8d7b49276df1667c1f751413012a6fcc37aaf5974f37b5e585d78cd9a1ce8c82",
+    "autosave/responses.recovery.378567fa6a374c4ab97e6bac187ffcd3.json": "e82af4b42665afc34ee629ef98bfd85868f0bddc537a0795d874729aad159e41",
+    "autosave/responses.recovery.4c135097c97b44568d7d2ae87cee2bf7.json": "9e7694d46515f29434a8f5bd22cdc513a82ec33d0e64c6917d30eb4f78c84475",
+    "final_reflection.md": "846445f4117c56cda36ca35013054dc6879529d610f6628c84f2acf9dc7cdd80",
+    "final_synthesis.md": "adb5aaa79a1a7818930a41670abd405ce603430881af3d0e3f78d02f4de00308",
+    "mission_1/evidence.png": "742c4d8d05d5e7834f881d916089e4be2840ceb5618e9a1f99166a71e6eb7feb",
+    "mission_1/explanation.md": "3a47d990870818ba43ae05a31739e31143033b89a863e09525df2fc2e2ee4899",
+    "mission_1/measurements.csv": "7bbec5d37ca30e4522aafca0892a82fa76c96f87dccbcbb9e8a4cb9c1fecd661",
+    "mission_1/submission.json": "52dc254be15ed19bfc24de4b24442284e3899302328c3a48a3cff57546c242f6",
+    "mission_2/evidence.png": "d155aaf71f73e920f91216fa06ee7f9eca09fdb765c4c3f328a915aa482e4321",
+    "mission_2/explanation.md": "f9309786b11079a0040c8c11bc0ba21fcc8f0ef2f0c0859a47435fa28fc6ebdf",
+    "mission_2/measurements.csv": "8d4277575eba68717c025406714f2a2a62000f26bba0e6ca4aed9ba750a0f65c",
+    "mission_2/submission.json": "0c47476660401c885d21776084fb0a9375e65fb109edc9c3361a2dfe6376c690",
+    "mission_3/explanation.md": "511d833d5ed5e27e117b210ddec1f10129ab2be81072ab5c4ce668c3e585a98d",
+    "mission_3/measurements.csv": "ec262127b2d2ee982d94b547e8dff5d1e167c756a069d5f4d1b13ed90ed7bf99",
+    "mission_3/submission.json": "e2541c93a5bee152b7b48ca749dbe15bd454dd52f33dae46cba17f3c0885fb53",
+    "student.json": "6a7d4a446153a2c07320079cf35796db2ebfd6925371a0222966ca55ee7196a9"
+  },
+  "generated_at": "2026-10-12T03:44:58.240497+00:00",
+  "lab_id": "week05_sensors_uncertainty",
+  "mission_signatures": {
+    "mission_1": "7728b4c6c8b105ae",
+    "mission_2": "555b1403819059aa",
+    "mission_3": "d2f7880778889049"
+  },
+  "response_signature": "a350a580ab615edc",
+  "schema_version": 2,
+  "student": {
+    "course_id": "CSCI 39536",
+    "email": "amaya.mangual74@login.cuny.edu",
+    "name": "Amaya Mangual"
+  }
+}

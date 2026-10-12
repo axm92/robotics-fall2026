@@ -12,11 +12,11 @@ When I increased the bias majority of the points in the measurement sequence gra
 
 ## final.course_reflection
 
-
+This activity was very heavy in calculations, and I don't think it was my favorite. While I enjoyed seeing the relationship between different configurations and how they play a role in the overall delay and errors of a robot, there were many times where I wasn't entirely sure what was going on. This worries me a little for my future in robotics or similar fields because there are many readings and charts that I'm still not comfortable with. There were also times where the goal/instructions felt a little unclear. A suggestion for the future is maybe making the instructions a little clearer, especially in mission 2, where we had to save multiple configurations, or maybe separate them so it is clear that we need multiple instead of one. Overall, I feel like I learned a lot and it makes me want to learn even more so I can maximize my abilities when it comes to our final project!
 
 ## final.synthesis
 
-
+A sensor's flaws determine which estimation choices make sense, and the deployment context determines which flaws matter the most. n Mission 1, Sensor A's readings had a small bias of −0.0141 m and a variance of 0.004307, but one outlier, 1.1m, caused majority of that variance, and 6 of the 240 readings were missing. That pattern pointed toward a median filter instead of an average. In mission 2, a window of three on the spike sequence gave 4.17m with a moving average but 2.3m with a median. Since sensor B is steadier but biased and updates every fourth step, fusion needed a balance, and a weight of 0.50 to give A the lowest RMSE with a delay of 0.9, compared with 1.1 at a weight of 0.25. n Mission 3, the same estimator behaved differently depending on the setting. The warehouse policy kept a 0.62% false-safe rate and a 5.61% unnecessary-stop rate, a tolerable cost of lost time. The assistive policy used a higher threshold of 0.95 m and abstained on missing data, reaching 0% on both errors, which matters because an injury or a repeated stop falls directly on one person. So, no setting is best in general, it depends on who is prioritized in certain environments and who is paying to have their needs met. 
 
 ## mission_1.bias
 
