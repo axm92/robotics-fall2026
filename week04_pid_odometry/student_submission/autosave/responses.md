@@ -18,6 +18,26 @@ I predicted that low Kp would make the arm very slow and it wouldn't be able to 
 
 I enjoyed this lab because I got to manipulate the key parts of the robot that makes it move around in the real world. The simulation itself was cool and relatively easy to use. This made me wonder if our group would use this to help us figure out how we want our robot to behave and move around. Something that stood out to me was that a robot can return readings that are seemingly fine but in practice the robot is actually way off and that is due to a calibration error. There will be no immediate flag that something is wrong until it is seen in action, which is important to keep in mind when we are designing and building our robot.
 
+### background_compare
+
+
+
+### background_social
+
+
+
+### odom_background_wheels
+
+None
+
+### m2_prediction
+
+
+
+### m3_prediction
+
+
+
 ## Mission explanations
 
 ### mission_1
