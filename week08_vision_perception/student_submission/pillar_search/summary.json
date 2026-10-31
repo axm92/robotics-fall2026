@@ -1,0 +1,32 @@
+[
+  {
+    "camera_wait_steps": 19,
+    "elapsed_sim_seconds": 30.39,
+    "line_loss_events": 0,
+    "mean_absolute_image_error_when_visible": 0.2635524093173363,
+    "outcome": "complete",
+    "recorded_steps": 325,
+    "visited_colors": [
+      "red",
+      "green",
+      "turquoise",
+      "blue"
+    ],
+    "world": "pillars"
+  },
+  {
+    "camera_wait_steps": 5,
+    "elapsed_sim_seconds": 21.05,
+    "line_loss_events": 0,
+    "mean_absolute_image_error_when_visible": 0.325824823537521,
+    "outcome": "complete",
+    "recorded_steps": 217,
+    "visited_colors": [
+      "red",
+      "green",
+      "turquoise",
+      "blue"
+    ],
+    "world": "pillars"
+  }
+]

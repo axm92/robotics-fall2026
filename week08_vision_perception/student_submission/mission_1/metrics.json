@@ -1,0 +1,303 @@
+{
+  "box_conditions": [
+    {
+      "box_fn": 2,
+      "box_fp": 2,
+      "box_precision": 0.0,
+      "box_recall": 0.0,
+      "box_tp": 0,
+      "condition": "normal"
+    },
+    {
+      "box_fn": 2,
+      "box_fp": 2,
+      "box_precision": 0.0,
+      "box_recall": 0.0,
+      "box_tp": 0,
+      "condition": "dim"
+    },
+    {
+      "box_fn": 2,
+      "box_fp": 2,
+      "box_precision": 0.0,
+      "box_recall": 0.0,
+      "box_tp": 0,
+      "condition": "glare"
+    },
+    {
+      "box_fn": 2,
+      "box_fp": 2,
+      "box_precision": 0.0,
+      "box_recall": 0.0,
+      "box_tp": 0,
+      "condition": "far"
+    },
+    {
+      "box_fn": 2,
+      "box_fp": 2,
+      "box_precision": 0.0,
+      "box_recall": 0.0,
+      "box_tp": 0,
+      "condition": "occluded"
+    },
+    {
+      "box_fn": 0,
+      "box_fp": 0,
+      "box_precision": 1.0,
+      "box_recall": 1.0,
+      "box_tp": 2,
+      "condition": "rotated"
+    },
+    {
+      "box_fn": 2,
+      "box_fp": 2,
+      "box_precision": 0.0,
+      "box_recall": 0.0,
+      "box_tp": 0,
+      "condition": "cluttered"
+    },
+    {
+      "box_fn": 0,
+      "box_fp": 0,
+      "box_precision": null,
+      "box_recall": null,
+      "box_tp": 0,
+      "condition": "distractor"
+    },
+    {
+      "box_fn": 2,
+      "box_fp": 2,
+      "box_precision": 0.0,
+      "box_recall": 0.0,
+      "box_tp": 0,
+      "condition": "blur"
+    },
+    {
+      "box_fn": 0,
+      "box_fp": 0,
+      "box_precision": 1.0,
+      "box_recall": 1.0,
+      "box_tp": 2,
+      "condition": "background"
+    },
+    {
+      "box_fn": 2,
+      "box_fp": 2,
+      "box_precision": 0.0,
+      "box_recall": 0.0,
+      "box_tp": 0,
+      "condition": "independent"
+    }
+  ],
+  "conditions": [
+    {
+      "accuracy": 1.0,
+      "condition": "normal",
+      "conditions": [
+        "normal"
+      ],
+      "false_positive_rate": 0.0,
+      "fn": 0,
+      "fp": 0,
+      "mean_latency_ms": 7.509066568066676,
+      "precision": 1.0,
+      "recall": 1.0,
+      "sample_count": 3,
+      "tn": 1,
+      "tp": 2
+    },
+    {
+      "accuracy": 1.0,
+      "condition": "dim",
+      "conditions": [
+        "dim"
+      ],
+      "false_positive_rate": 0.0,
+      "fn": 0,
+      "fp": 0,
+      "mean_latency_ms": 8.765433449298143,
+      "precision": 1.0,
+      "recall": 1.0,
+      "sample_count": 3,
+      "tn": 1,
+      "tp": 2
+    },
+    {
+      "accuracy": 1.0,
+      "condition": "glare",
+      "conditions": [
+        "glare"
+      ],
+      "false_positive_rate": 0.0,
+      "fn": 0,
+      "fp": 0,
+      "mean_latency_ms": 7.761533372104168,
+      "precision": 1.0,
+      "recall": 1.0,
+      "sample_count": 3,
+      "tn": 1,
+      "tp": 2
+    },
+    {
+      "accuracy": 1.0,
+      "condition": "far",
+      "conditions": [
+        "far"
+      ],
+      "false_positive_rate": 0.0,
+      "fn": 0,
+      "fp": 0,
+      "mean_latency_ms": 7.237833303709825,
+      "precision": 1.0,
+      "recall": 1.0,
+      "sample_count": 3,
+      "tn": 1,
+      "tp": 2
+    },
+    {
+      "accuracy": 1.0,
+      "condition": "occluded",
+      "conditions": [
+        "occluded"
+      ],
+      "false_positive_rate": 0.0,
+      "fn": 0,
+      "fp": 0,
+      "mean_latency_ms": 6.81146668891112,
+      "precision": 1.0,
+      "recall": 1.0,
+      "sample_count": 3,
+      "tn": 1,
+      "tp": 2
+    },
+    {
+      "accuracy": 1.0,
+      "condition": "rotated",
+      "conditions": [
+        "rotated"
+      ],
+      "false_positive_rate": 0.0,
+      "fn": 0,
+      "fp": 0,
+      "mean_latency_ms": 6.730799951280157,
+      "precision": 1.0,
+      "recall": 1.0,
+      "sample_count": 3,
+      "tn": 1,
+      "tp": 2
+    },
+    {
+      "accuracy": 1.0,
+      "condition": "cluttered",
+      "conditions": [
+        "cluttered"
+      ],
+      "false_positive_rate": 0.0,
+      "fn": 0,
+      "fp": 0,
+      "mean_latency_ms": 6.572866579517722,
+      "precision": 1.0,
+      "recall": 1.0,
+      "sample_count": 3,
+      "tn": 1,
+      "tp": 2
+    },
+    {
+      "accuracy": 1.0,
+      "condition": "distractor",
+      "conditions": [
+        "distractor"
+      ],
+      "false_positive_rate": 0.0,
+      "fn": 0,
+      "fp": 0,
+      "mean_latency_ms": 6.470299907959998,
+      "precision": null,
+      "recall": null,
+      "sample_count": 2,
+      "tn": 2,
+      "tp": 0
+    },
+    {
+      "accuracy": 1.0,
+      "condition": "blur",
+      "conditions": [
+        "blur"
+      ],
+      "false_positive_rate": 0.0,
+      "fn": 0,
+      "fp": 0,
+      "mean_latency_ms": 7.301400027548273,
+      "precision": 1.0,
+      "recall": 1.0,
+      "sample_count": 3,
+      "tn": 1,
+      "tp": 2
+    },
+    {
+      "accuracy": 1.0,
+      "condition": "background",
+      "conditions": [
+        "background"
+      ],
+      "false_positive_rate": 0.0,
+      "fn": 0,
+      "fp": 0,
+      "mean_latency_ms": 7.128966739401221,
+      "precision": 1.0,
+      "recall": 1.0,
+      "sample_count": 3,
+      "tn": 1,
+      "tp": 2
+    },
+    {
+      "accuracy": 1.0,
+      "condition": "independent",
+      "conditions": [
+        "independent"
+      ],
+      "false_positive_rate": null,
+      "fn": 0,
+      "fp": 0,
+      "mean_latency_ms": 7.53925007302314,
+      "precision": 1.0,
+      "recall": 1.0,
+      "sample_count": 2,
+      "tn": 0,
+      "tp": 2
+    }
+  ],
+  "localization": {
+    "box_fn": 16,
+    "box_fp": 16,
+    "box_precision": 0.2,
+    "box_recall": 0.2,
+    "box_tp": 4
+  },
+  "metrics": {
+    "accuracy": 1.0,
+    "conditions": [
+      "background",
+      "blur",
+      "cluttered",
+      "dim",
+      "distractor",
+      "far",
+      "glare",
+      "independent",
+      "normal",
+      "occluded",
+      "rotated"
+    ],
+    "false_positive_rate": 0.0,
+    "fn": 0,
+    "fp": 0,
+    "mean_latency_ms": 7.273458064563813,
+    "precision": 1.0,
+    "recall": 1.0,
+    "sample_count": 31,
+    "tn": 11,
+    "tp": 20
+  },
+  "sweep": []
+}
