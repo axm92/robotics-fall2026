@@ -1,0 +1,18 @@
+[INFO] [1794022583.910865090] [lab8_experiment_probe]: Waiting for Nav2 planning and path-following actions
+[INFO] [1794022587.455200377] [lab8_experiment_probe]: Waiting for map-frame robot position and lidar
+[INFO] [1794022589.925436758] [lab8_experiment_probe]: Waiting for planner_server lifecycle activation
+[INFO] [1794022590.832391811] [lab8_experiment_probe]: Waiting for controller_server lifecycle activation
+[INFO] [1794022590.887277965] [lab8_experiment_probe]: Waiting for velocity_smoother lifecycle activation
+[INFO] [1794022590.944487732] [lab8_experiment_probe]: Waiting for collision_monitor lifecycle activation
+[INFO] [1794022591.075335870] [lab8_experiment_probe]: Nav2 ready. Preparing the requested path
+[INFO] [1794022591.158174621] [lab8_experiment_probe]: Following path: 0 simulated seconds, estimated goal distance 9.65 m
+[INFO] [1794022596.207231837] [lab8_experiment_probe]: Following path: 5 simulated seconds, estimated goal distance 8.37 m
+[INFO] [1794022601.261589669] [lab8_experiment_probe]: Following path: 10 simulated seconds, estimated goal distance 7.43 m
+[INFO] [1794022606.321014597] [lab8_experiment_probe]: Following path: 15 simulated seconds, estimated goal distance 6.76 m
+[INFO] [1794022611.376535265] [lab8_experiment_probe]: Following path: 20 simulated seconds, estimated goal distance 5.44 m
+[INFO] [1794022616.429199754] [lab8_experiment_probe]: Following path: 25 simulated seconds, estimated goal distance 4.07 m
+[INFO] [1794022621.481898876] [lab8_experiment_probe]: Following path: 30 simulated seconds, estimated goal distance 3.40 m
+[INFO] [1794022626.528245632] [lab8_experiment_probe]: Following path: 35 simulated seconds, estimated goal distance 2.25 m
+[INFO] [1794022631.576168253] [lab8_experiment_probe]: Following path: 40 simulated seconds, estimated goal distance 1.16 m
+[INFO] [1794022635.325433301] [lab8_experiment_probe]: Finishing trial: succeeded
+{"status": "succeeded", "output": "/workspace/week09_planning_navigation/runtime/trials/open_rrt_0_baseline_f7448c6a55/result.json"}

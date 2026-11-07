@@ -1,0 +1,45 @@
+{
+  "status": "succeeded",
+  "error": "",
+  "planning_s": 2.1179001123527996e-05,
+  "expanded": 6,
+  "peak_frontier": 1,
+  "path": [
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      1,
+      7
+    ]
+  ],
+  "path_length_m": 1.5,
+  "optimal_length_m": 1.5,
+  "optimality_ratio": 1.0,
+  "case": "Narrow passage",
+  "planner": "bfs",
+  "source_sha256": "28ad28e645bf9908f648d01fcf5cba76e6545ef2a5a1deedc7841b7d36e21091",
+  "expected_status": "succeeded",
+  "check_passed": true
+}
