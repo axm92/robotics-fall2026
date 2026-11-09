@@ -1,0 +1,92 @@
+{
+  "stage": "final_submission",
+  "responses": {
+    "m1_analysis": "I would say that my request did improve the response. The response was clear and concise and told me what I needed to know. The robot ended up going to the shelf and reported observations of the cup that was on the shelf. I used part of the clear request to help with mine and also the compatibility card. The other 2 requests were very unhelpful and did not give clear enough instructions and the last one the robot wasn't even capable of doing. I think using the word navigate and reporting before the robot inspects was the key difference. I believe this because if the is nothing to inspect when the robot reaches a destination then there is no point and it won't be able to report on the known object that is there. ",
+    "m2_analysis": "I chose the decide task and my revised request did produce a better answer for the goal than the original request. One specific difference is that I gave the task that the robot needed the tool/object for. Before it was very vague and didn't explicitly say what the tool was for. It also didn't help that the previous requests didn't properly identify the object so the decide just used what it previously \"knew\" to give its answer. While we know it's a compass that is in the image the robot still needs to be able to identify that. While the tool in the foreground is clear to us it still takes a little more to obtain confidence in the response that is given, and by giving evidence it becomes 10x more helpful. I wouldn't say my request was the best because the response didn't really confirm that the object in the image was a compass but rather that a compass would be the right object for the job in general. ",
+    "m3_analysis": "I tried multiple different paths and none of them worked the way I intended them to. I was trying to use some of the directions from prompt 2 because it got the furthest, however it was not working in my favor, and it got stuck in basically the same place. Any command I gave the simulation would only start and go up. Even if my only command was RIGHT, it would still go up and I'm not sure why. Eventually when it went to the right it got stuck in a pattern of going UP and DOWN between 2 squares. My prompt helped a little in comparison to the other 2, however there is a limitation in getting it to move all the way down and not get stuck in a UP and DOWN loop until it runs out of moves. ",
+    "final_synthesis": "I learned that it takes very specific requests or commands to have a response from a robot that is useful and accurate. If you are too vague the robot will most likely behave in a way that is not useful or not even the intended behavior. However, if you give too much information the robot may not be able to process everything and will still not behave in a way that is useful. It is important to find a balance between specific but not too specific to the point where the robot just does whatever to fill in information it doesn't have. For example, my requests in mission 1 and mission 2 made meaningful impacts and gave better results than the ones modeled but in the last mission I couldn't really find that balance. The robot needs a more guided route than the one I provided. \n\nIn mission 1, I used specific vocabulary that was within the card given at the beginning and that resulted in a more concise and helpful response. In mission 2, I gave an explanation of what the goal of the robot was so that it had more information on what kind of tool was actually needed, and it provided me with the correct tool, even though it doesn't confirm that that is the tool in the image. In mission 3, I was as specific as I could get but tried to keep it short as well, however it still got stuck and didn't make it to the end goal.  ",
+    "final.course_reflection": "This activity made me think about how our team will have to give commands to our trash robot if we move away from the virtual simulation and use the actual robot that the professor mentioned in class. That robot has an arm and getting that arm to pick up actual trash and dispose of it would take very careful and delegated instructions. We'd also have to train it in a way where it becomes intuitive, and the robot would be able to comfortably pick up garbage around others in a safe way. I also realized that sometimes what we think are clear instructions are completely useless to the robot if it doesn't understand the commands and doesn't have access to certain information. I actually enjoyed this lab and seeing what my changes could actually do and aid in getting better results. I would love to actually try to get a robot arm to work and this was a great first step in getting me to think about how to implement it.  "
+  },
+  "student": {
+    "name": "Amaya Mangual",
+    "email": "24301574"
+  },
+  "tutorial_step": 5,
+  "tutorial_reviewed": 6,
+  "controls": {
+    "control_ground_instruction": "Point to the blue cup",
+    "control_demo_step": 3,
+    "control_adapt_choice": "Training from scratch",
+    "control_adapt_scenario": "The request does not identify the intended cup",
+    "control_adapt_instruction": "Move the blue cup to the tray",
+    "control_adapt_records": 2,
+    "control_movement_token": 100,
+    "control_movement_angle": 90,
+    "control_chunk_size": 4,
+    "control_chunk_hz": 10,
+    "control_validate_conf_navigate": 0.9,
+    "control_validate_case": "Navigate to an unreachable room",
+    "control_validate_age_navigate": 2.5,
+    "control_validate_conf_inspect": 0.9,
+    "control_validate_age_inspect": 0.1,
+    "control_validate_age_stale": 30.0,
+    "control_validate_conf_stale": 0.9,
+    "control_validate_age_unreachable": 0.1,
+    "control_validate_conf_unreachable": 0.9,
+    "control_live_language_runs": [
+      "9c91e386ddca42928636ae0b1027c4a0",
+      "aa9287156c9b4fdd83d8b8ab99f1d324",
+      "21f4d4578f8441208d179984fa4f485f",
+      "b4ac75a3e3334e3ba70382e00066210c"
+    ],
+    "control_live_language_active": "b4ac75a3e3334e3ba70382e00066210c",
+    "control_live_language_custom_prompt": "Navigate to the shelf and report observations. If object is found and is a cup, inspect the cup and report the observations. ",
+    "control_live_vision_runs": [
+      "24093be6a6d142c58d8026d6f3c58360",
+      "f88e4a975a0345b5b24fb0db16943d17",
+      "a55da3ba2b6d4fc6b716d5bdecf0f40b",
+      "e4c60e36e6ba488a8e039566d3f52471",
+      "52c1bca3dd0f48e19fb8b3050de3f062"
+    ],
+    "control_live_vision_active": "52c1bca3dd0f48e19fb8b3050de3f062",
+    "control_live_vision_custom_prompt": "The robot is preparing to make a mark of a circle on a flat wooden workpiece and needs to find a tool that would help it achieve this goal. Which visible tool in the image would be helpful for this task. Identify and give evidence from the image that supports your choice and make sure it is an object that the robot can actually grab safely. ",
+    "control_robot_runs": [
+      "f66f77fd94a94136855f7d33e51cde03",
+      "4c8a1f827b5b45f696da2ddfb9905c6f",
+      "e68478c886d548fcaa5d5fd32c55f624",
+      "3c183219de3b46b3a6ef951a590fabbe",
+      "6a36c46055ac4b9e9d4052fca1983668",
+      "873cc4382a6447ecb5a432a3202a829e",
+      "fe6b631e55444ef49c45ce4f64311859",
+      "c907edb0cef0415c813138e01075df48",
+      "04cccf6dfbc440df91bce3df9d537909",
+      "0832f074a61d42cb8b06cae353b68bf8",
+      "1cc7b5fe3a904f27b8123978ba404971",
+      "eaf93e8f7125491198a5458790915921",
+      "3a207cecd03746529c33aef0be312530",
+      "23a3783bbd3d4ff4b88ef0f32e4781e6",
+      "da5b633c32bc4088a239146968ef0921",
+      "2d97266dc84b46a6800e686058def4d9",
+      "e990881537fc45f9b69f0d53ac9306f7",
+      "d7f8e98ee2ed4e589110d43a47a8eaa2"
+    ],
+    "control_robot_active": "d7f8e98ee2ed4e589110d43a47a8eaa2",
+    "control_robot_custom_prompt": "Reach the blue target crate at (11,1). Reply with exactly the word UP until (1,1). Then reply RIGHT until (7,1). Reply DOWN until (7,7), reply RIGHT until (7,11), and reply UP until (11,1)."
+  },
+  "guided_version": 4,
+  "guided_seen": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "response_widgets": [
+    "m1_analysis",
+    "m2_analysis",
+    "m3_analysis",
+    "final_synthesis"
+  ],
+  "version": 2
+}

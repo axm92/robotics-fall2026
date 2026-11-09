@@ -1,0 +1,195 @@
+{
+  "version": 2,
+  "run_id": "7cf4108405c749778646f8d68e3d25ad",
+  "mission": "mission_2",
+  "saved_at": "2026-11-08T22:56:55.940096+00:00",
+  "settings": {
+    "experiment": "local-live-v2",
+    "model": {
+      "id": "HuggingFaceTB/SmolVLM-500M-Instruct",
+      "revision": "a7da5b986cb59b408707209984f360a5f4ad7e47"
+    }
+  },
+  "rows": [
+    {
+      "job_id": "24093be6a6d142c58d8026d6f3c58360",
+      "kind": "vision",
+      "case": "identify",
+      "prompt": "What tool is lying in the foreground of this workbench?",
+      "phase": "baseline",
+      "parent_id": null,
+      "requested_at": "2026-11-08T22:33:28.131815+00:00",
+      "comparison_ids": [],
+      "output": "Tape measure.",
+      "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+      "model_revision": "a7da5b986cb59b408707209984f360a5f4ad7e47",
+      "system_prompt": "",
+      "model_input": "What tool is lying in the foreground of this workbench?",
+      "image_sha256": "0c0e4365ce25ec9f22daf3bd4d95883bddd9782289ec17fdb7d2b7c4e8b280ff",
+      "image_preprocessing": {
+        "longest_edge": 512,
+        "image_splitting": false
+      },
+      "generated_tokens": 4,
+      "max_new_tokens": 80,
+      "generation_seconds": 1.235,
+      "truncated": false,
+      "decoding": "greedy",
+      "device": "cpu",
+      "live_inference": true,
+      "library_versions": {
+        "torch": "2.8.0+cpu",
+        "transformers": "4.57.1"
+      },
+      "output_constraint": null,
+      "completed_at": "2026-11-08T22:33:35.737268+00:00"
+    },
+    {
+      "job_id": "f88e4a975a0345b5b24fb0db16943d17",
+      "kind": "vision",
+      "case": "spatial",
+      "prompt": "Where is the black vertical metal post relative to the tool in the foreground?",
+      "phase": "baseline",
+      "parent_id": null,
+      "requested_at": "2026-11-08T22:33:52.165861+00:00",
+      "comparison_ids": [],
+      "output": "The black vertical metal post is to the right of the tool in the foreground.",
+      "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+      "model_revision": "a7da5b986cb59b408707209984f360a5f4ad7e47",
+      "system_prompt": "",
+      "model_input": "Where is the black vertical metal post relative to the tool in the foreground?",
+      "image_sha256": "0c0e4365ce25ec9f22daf3bd4d95883bddd9782289ec17fdb7d2b7c4e8b280ff",
+      "image_preprocessing": {
+        "longest_edge": 512,
+        "image_splitting": false
+      },
+      "generated_tokens": 17,
+      "max_new_tokens": 80,
+      "generation_seconds": 1.619,
+      "truncated": false,
+      "decoding": "greedy",
+      "device": "cpu",
+      "live_inference": true,
+      "library_versions": {
+        "torch": "2.8.0+cpu",
+        "transformers": "4.57.1"
+      },
+      "output_constraint": null,
+      "completed_at": "2026-11-08T22:33:53.934489+00:00"
+    },
+    {
+      "job_id": "a55da3ba2b6d4fc6b716d5bdecf0f40b",
+      "kind": "vision",
+      "case": "purpose",
+      "prompt": "A robot needs the correct tool for its task. Which object in this image should it pick up?",
+      "phase": "baseline",
+      "parent_id": null,
+      "requested_at": "2026-11-08T22:34:04.229183+00:00",
+      "comparison_ids": [],
+      "output": "The robot needs the correct tool for its task. The correct tool is a measuring tape.",
+      "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+      "model_revision": "a7da5b986cb59b408707209984f360a5f4ad7e47",
+      "system_prompt": "",
+      "model_input": "A robot needs the correct tool for its task. Which object in this image should it pick up?",
+      "image_sha256": "0c0e4365ce25ec9f22daf3bd4d95883bddd9782289ec17fdb7d2b7c4e8b280ff",
+      "image_preprocessing": {
+        "longest_edge": 512,
+        "image_splitting": false
+      },
+      "generated_tokens": 19,
+      "max_new_tokens": 80,
+      "generation_seconds": 1.683,
+      "truncated": false,
+      "decoding": "greedy",
+      "device": "cpu",
+      "live_inference": true,
+      "library_versions": {
+        "torch": "2.8.0+cpu",
+        "transformers": "4.57.1"
+      },
+      "output_constraint": null,
+      "completed_at": "2026-11-08T22:34:06.106551+00:00"
+    },
+    {
+      "job_id": "e4c60e36e6ba488a8e039566d3f52471",
+      "kind": "vision",
+      "case": "custom",
+      "prompt": "The robot is preparing to make a mark of a circle on a flat wooden workpiece and needs to find a tool that would help it achieve this goal. Which visible tool in the image would be helpful for this task. Identify and give evidence from the image that supports your choice and make sure it is an object that the robot can actually grab safely.",
+      "phase": "custom",
+      "parent_id": null,
+      "requested_at": "2026-11-08T22:49:13.804699+00:00",
+      "comparison_ids": [
+        "24093be6a6d142c58d8026d6f3c58360",
+        "f88e4a975a0345b5b24fb0db16943d17",
+        "a55da3ba2b6d4fc6b716d5bdecf0f40b"
+      ],
+      "output": "The visible tool that would be helpful for the robot to make a mark of a circle on a flat wooden workpiece is a compass. The compass is a tool that is used to measure angles and can be used to draw circles. The robot can use the compass to measure the angle of the workpiece and then use the circle tool to draw a circle.",
+      "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+      "model_revision": "a7da5b986cb59b408707209984f360a5f4ad7e47",
+      "system_prompt": "",
+      "model_input": "The robot is preparing to make a mark of a circle on a flat wooden workpiece and needs to find a tool that would help it achieve this goal. Which visible tool in the image would be helpful for this task. Identify and give evidence from the image that supports your choice and make sure it is an object that the robot can actually grab safely.",
+      "image_sha256": "0c0e4365ce25ec9f22daf3bd4d95883bddd9782289ec17fdb7d2b7c4e8b280ff",
+      "image_preprocessing": {
+        "longest_edge": 512,
+        "image_splitting": false
+      },
+      "generated_tokens": 70,
+      "max_new_tokens": 80,
+      "generation_seconds": 3.51,
+      "truncated": false,
+      "decoding": "greedy",
+      "device": "cpu",
+      "live_inference": true,
+      "library_versions": {
+        "torch": "2.8.0+cpu",
+        "transformers": "4.57.1"
+      },
+      "output_constraint": null,
+      "completed_at": "2026-11-08T22:49:22.630710+00:00"
+    },
+    {
+      "job_id": "52c1bca3dd0f48e19fb8b3050de3f062",
+      "kind": "vision",
+      "case": "custom",
+      "prompt": "The robot is preparing to make a mark of a circle on a flat wooden workpiece and needs to find a tool that would help it achieve this goal. Which visible tool in the image would be helpful for this task. Identify and give evidence from the image that supports your choice and make sure it is an object that the robot can actually grab safely.",
+      "phase": "custom",
+      "parent_id": null,
+      "requested_at": "2026-11-08T22:49:38.865193+00:00",
+      "comparison_ids": [
+        "24093be6a6d142c58d8026d6f3c58360",
+        "f88e4a975a0345b5b24fb0db16943d17",
+        "a55da3ba2b6d4fc6b716d5bdecf0f40b"
+      ],
+      "output": "The visible tool that would be helpful for the robot to make a mark of a circle on a flat wooden workpiece is a compass. The compass is a tool that is used to measure angles and can be used to draw circles. The robot can use the compass to measure the angle of the workpiece and then use the circle tool to draw a circle.",
+      "model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+      "model_revision": "a7da5b986cb59b408707209984f360a5f4ad7e47",
+      "system_prompt": "",
+      "model_input": "The robot is preparing to make a mark of a circle on a flat wooden workpiece and needs to find a tool that would help it achieve this goal. Which visible tool in the image would be helpful for this task. Identify and give evidence from the image that supports your choice and make sure it is an object that the robot can actually grab safely.",
+      "image_sha256": "0c0e4365ce25ec9f22daf3bd4d95883bddd9782289ec17fdb7d2b7c4e8b280ff",
+      "image_preprocessing": {
+        "longest_edge": 512,
+        "image_splitting": false
+      },
+      "generated_tokens": 70,
+      "max_new_tokens": 80,
+      "generation_seconds": 3.559,
+      "truncated": false,
+      "decoding": "greedy",
+      "device": "cpu",
+      "live_inference": true,
+      "library_versions": {
+        "torch": "2.8.0+cpu",
+        "transformers": "4.57.1"
+      },
+      "output_constraint": null,
+      "completed_at": "2026-11-08T22:49:42.562815+00:00"
+    }
+  ],
+  "responses": {
+    "analysis": "I chose the decide task and my revised request did produce a better answer for the goal than the original request. One specific difference is that I gave the task that the robot needed the tool/object for. Before it was very vague and didn't explicitly say what the tool was for. It also didn't help that the previous requests didn't properly identify the object so the decide just used what it previously \"knew\" to give its answer. While we know it's a compass that is in the image the robot still needs to be able to identify that. While the tool in the foreground is clear to us it still takes a little more to obtain confidence in the response that is given, and by giving evidence it becomes 10x more helpful. I wouldn't say my request was the best because the response didn't really confirm that the object in the image was a compass but rather that a compass would be the right object for the job in general. "
+  },
+  "extra": {
+    "draft_signature": "7eff4a7dc7a906652920ebf6275f1fe902125259d7cc2b8c9b3ecc9979d39c46",
+    "upstream_run": "1e49aa8aa75e4df3906a2790271c59c5"
+  }
+}

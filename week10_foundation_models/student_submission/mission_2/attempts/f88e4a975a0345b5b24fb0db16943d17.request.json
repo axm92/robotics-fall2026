@@ -1,0 +1,10 @@
+{
+  "job_id": "f88e4a975a0345b5b24fb0db16943d17",
+  "kind": "vision",
+  "case": "spatial",
+  "prompt": "Where is the black vertical metal post relative to the tool in the foreground?",
+  "phase": "baseline",
+  "parent_id": null,
+  "requested_at": "2026-11-08T22:33:52.165861+00:00",
+  "comparison_ids": []
+}

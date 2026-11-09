@@ -1,0 +1,14 @@
+{
+  "job_id": "52c1bca3dd0f48e19fb8b3050de3f062",
+  "kind": "vision",
+  "case": "custom",
+  "prompt": "The robot is preparing to make a mark of a circle on a flat wooden workpiece and needs to find a tool that would help it achieve this goal. Which visible tool in the image would be helpful for this task. Identify and give evidence from the image that supports your choice and make sure it is an object that the robot can actually grab safely.",
+  "phase": "custom",
+  "parent_id": null,
+  "requested_at": "2026-11-08T22:49:38.865193+00:00",
+  "comparison_ids": [
+    "24093be6a6d142c58d8026d6f3c58360",
+    "f88e4a975a0345b5b24fb0db16943d17",
+    "a55da3ba2b6d4fc6b716d5bdecf0f40b"
+  ]
+}

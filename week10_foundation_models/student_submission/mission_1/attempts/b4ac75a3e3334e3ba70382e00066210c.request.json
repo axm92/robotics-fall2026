@@ -1,0 +1,14 @@
+{
+  "job_id": "b4ac75a3e3334e3ba70382e00066210c",
+  "kind": "language",
+  "case": "custom",
+  "prompt": "Navigate to the shelf and report observations. If object is found and is a cup, inspect the cup and report the observations.",
+  "phase": "custom",
+  "parent_id": null,
+  "requested_at": "2026-11-08T22:19:48.716062+00:00",
+  "comparison_ids": [
+    "9c91e386ddca42928636ae0b1027c4a0",
+    "aa9287156c9b4fdd83d8b8ab99f1d324",
+    "21f4d4578f8441208d179984fa4f485f"
+  ]
+}

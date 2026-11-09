@@ -1,0 +1,29 @@
+{
+  "job_id": "fe6b631e55444ef49c45ce4f64311859",
+  "kind": "language",
+  "case": "custom",
+  "prompt": "Reach the blue target crate at (11,1). From start at (1,7) move UP to (1,3) and STOP at (1,2). Then reply RIGHT until (3,2). Then go UP to (3,1). From there RIGHT until (7,1). Then DOWN until (7,7). RIGHT until (11,7). Lastly, UP to (11,1) the goal.",
+  "phase": "custom",
+  "parent_id": null,
+  "requested_at": "2026-11-08T23:47:58.062899+00:00",
+  "comparison_ids": [
+    "f66f77fd94a94136855f7d33e51cde03",
+    "4c8a1f827b5b45f696da2ddfb9905c6f",
+    "e68478c886d548fcaa5d5fd32c55f624"
+  ],
+  "task": "robot",
+  "robot_state": {
+    "position": [
+      1,
+      7
+    ],
+    "step": 0,
+    "history": [],
+    "finished": false,
+    "goal_reached": false,
+    "first_goal_step": null,
+    "last_feedback": "No previous action.",
+    "last_decision": null
+  },
+  "simulator_contract": "8da30a943bd97ee39237aa05e8e6800fecdecbef3ce692d7d4e48f851679060f"
+}
