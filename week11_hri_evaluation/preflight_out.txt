@@ -1,0 +1,7 @@
+[PASS] Python >= 3.10: 3.12.3
+[PASS] ROS 2 CLI: /opt/ros/jazzy/bin/ros2
+[PASS] ROS_DISTRO is jazzy: jazzy
+[PASS] Package rclpy: found
+[PASS] Package std_msgs: found
+[PASS] Package geometry_msgs: found
+[PASS] Package week11_hri_demo: found

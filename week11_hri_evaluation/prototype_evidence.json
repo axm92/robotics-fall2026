@@ -1,0 +1,6 @@
+{
+  "observed_states": ["IDLE", "LISTENING", "CONFIRMING", "ANNOUNCE", "APPROACH", "ACTING", "COMPLETE", "ERROR"],
+  "motion_enabled": false,
+  "stop_tested": true,
+  "dry_runs": 2
+}
