@@ -1,0 +1,202 @@
+{
+  "schema_version": 1,
+  "trial_id": "dry_run_01",
+  "design_version": "baseline",
+  "events": [
+    {
+      "t_s": 8.494,
+      "kind": "command",
+      "value": "[primary command received; content omitted]"
+    },
+    {
+      "t_s": 8.497,
+      "kind": "state",
+      "value": "CONFIRMING"
+    },
+    {
+      "t_s": 8.497,
+      "kind": "display",
+      "value": "I heard: bring the blue cup. Reply yes to confirm or correct: followed by a new request."
+    },
+    {
+      "t_s": 13.394,
+      "kind": "state",
+      "value": "ACTING"
+    },
+    {
+      "t_s": 13.394,
+      "kind": "display",
+      "value": "Confirmed. Starting the bounded task. Stop remains available."
+    },
+    {
+      "t_s": 15.418,
+      "kind": "state",
+      "value": "COMPLETE"
+    },
+    {
+      "t_s": 15.419,
+      "kind": "display",
+      "value": "Task simulation complete. What would you like to do next?"
+    },
+    {
+      "t_s": 36.692,
+      "kind": "command",
+      "value": "[primary command received; content omitted]"
+    },
+    {
+      "t_s": 41.146,
+      "kind": "command",
+      "value": "[primary command received; content omitted]"
+    },
+    {
+      "t_s": 41.146,
+      "kind": "state",
+      "value": "CONFIRMING"
+    },
+    {
+      "t_s": 41.146,
+      "kind": "display",
+      "value": "I heard: bring the blue cup. Reply yes to confirm or correct: followed by a new request."
+    },
+    {
+      "t_s": 44.947,
+      "kind": "command",
+      "value": "[primary command received; content omitted]"
+    },
+    {
+      "t_s": 44.947,
+      "kind": "state",
+      "value": "ACTING"
+    },
+    {
+      "t_s": 44.947,
+      "kind": "display",
+      "value": "Confirmed. Starting the bounded task. Stop remains available."
+    },
+    {
+      "t_s": 47.019,
+      "kind": "state",
+      "value": "COMPLETE"
+    },
+    {
+      "t_s": 47.019,
+      "kind": "display",
+      "value": "Task simulation complete. What would you like to do next?"
+    },
+    {
+      "t_s": 50.811,
+      "kind": "command",
+      "value": "[primary command received; content omitted]"
+    },
+    {
+      "t_s": 50.812,
+      "kind": "state",
+      "value": "CONFIRMING"
+    },
+    {
+      "t_s": 50.812,
+      "kind": "display",
+      "value": "I heard: bring the blue cup. Reply yes to confirm or correct: followed by a new request."
+    },
+    {
+      "t_s": 62.819,
+      "kind": "state",
+      "value": "ERROR"
+    },
+    {
+      "t_s": 62.819,
+      "kind": "display",
+      "value": "Timed out safely. No action was taken. Send a new request to continue."
+    },
+    {
+      "t_s": 65.82,
+      "kind": "state",
+      "value": "LISTENING"
+    },
+    {
+      "t_s": 65.821,
+      "kind": "display",
+      "value": "Listening. Type your request now."
+    },
+    {
+      "t_s": 70.183,
+      "kind": "command",
+      "value": "[primary command received; content omitted]"
+    },
+    {
+      "t_s": 70.183,
+      "kind": "state",
+      "value": "CONFIRMING"
+    },
+    {
+      "t_s": 70.183,
+      "kind": "display",
+      "value": "I heard: bring the blue cup. Reply yes to confirm or correct: followed by a new request."
+    },
+    {
+      "t_s": 78.737,
+      "kind": "command",
+      "value": "[primary command received; content omitted]"
+    },
+    {
+      "t_s": 78.738,
+      "kind": "state",
+      "value": "CONFIRMING"
+    },
+    {
+      "t_s": 78.738,
+      "kind": "display",
+      "value": "I heard: bring the red cup. Reply yes to confirm or correct: followed by a new request."
+    },
+    {
+      "t_s": 82.784,
+      "kind": "state",
+      "value": "ACTING"
+    },
+    {
+      "t_s": 82.784,
+      "kind": "display",
+      "value": "Confirmed. Starting the bounded task. Stop remains available."
+    },
+    {
+      "t_s": 84.822,
+      "kind": "state",
+      "value": "COMPLETE"
+    },
+    {
+      "t_s": 84.822,
+      "kind": "display",
+      "value": "Task simulation complete. What would you like to do next?"
+    },
+    {
+      "t_s": 91.613,
+      "kind": "state",
+      "value": "CONFIRMING"
+    },
+    {
+      "t_s": 91.613,
+      "kind": "display",
+      "value": "I heard: bring the blue cup. Reply yes to confirm or correct: followed by a new request."
+    },
+    {
+      "t_s": 97.752,
+      "kind": "state",
+      "value": "LISTENING"
+    },
+    {
+      "t_s": 97.752,
+      "kind": "display",
+      "value": "Cancelled. Listening for a new request."
+    },
+    {
+      "t_s": 104.849,
+      "kind": "state",
+      "value": "ERROR"
+    },
+    {
+      "t_s": 104.849,
+      "kind": "display",
+      "value": "Emergency stop received. Motion and task execution are stopped."
+    }
+  ]
+}

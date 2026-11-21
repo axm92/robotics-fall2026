@@ -1,0 +1,1 @@
+This time when i cancelled I didn't even see the feedback message that I saw the first time so my change was obsolete in this case and didn't make a difference. This time it told me that the robot had stopped. I also might have changed the wrong event but it was hard to pinpoint which even it was because the same events gave different feedback.

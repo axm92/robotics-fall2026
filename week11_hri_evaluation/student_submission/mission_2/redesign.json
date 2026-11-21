@@ -1,0 +1,6 @@
+{
+  "case": "cancel",
+  "phase": "EXECUTING",
+  "message": "Currently pausing...Would you like to proceed with cancel? If so confirm by inputting cancel again. Or you can input a new command",
+  "rationale": "I got a little confused as to what it was asking me when I cancelled. I assumed that the cancel would stop everything completely, but it paused and then had a vague instruction afterwards. But here the user should know that it has stopped for now but that it is not completely cancelled until they confirm it or give it a new command."
+}

@@ -1,0 +1,629 @@
+{
+  "state": {
+    "mode": "Shared autonomy with voice",
+    "scenario": "cancel",
+    "phase": "CANCELLED",
+    "position": 4,
+    "target": "blue",
+    "held": null,
+    "delivered": null,
+    "confirmed": false,
+    "checkpoint_seen": true,
+    "waiting_for_change": false,
+    "ros": true
+  },
+  "events": [
+    {
+      "seconds": 0,
+      "source": "voice",
+      "intended": "bring me the blue cup",
+      "transcript": "bring me the blue",
+      "event": "UNRECOGNIZED",
+      "target": null,
+      "decision": "repeat",
+      "before": {
+        "mode": "Shared autonomy with voice",
+        "scenario": "cancel",
+        "phase": "IDLE",
+        "position": 0,
+        "target": null,
+        "held": null,
+        "delivered": null,
+        "confirmed": false,
+        "checkpoint_seen": false,
+        "waiting_for_change": false,
+        "ros": true
+      },
+      "after": {
+        "mode": "Shared autonomy with voice",
+        "scenario": "cancel",
+        "phase": "IDLE",
+        "position": 0,
+        "target": null,
+        "held": null,
+        "delivered": null,
+        "confirmed": false,
+        "checkpoint_seen": false,
+        "waiting_for_change": false,
+        "ros": true
+      },
+      "feedback": "Command unclear. Try again or use the typed input.",
+      "ros_pose": [
+        8.478178005374568e-13,
+        -4.364196704862017e-24,
+        -8.501768541233512e-12
+      ],
+      "ros_distance_m": 0.0
+    },
+    {
+      "seconds": 17.74,
+      "source": "voice",
+      "intended": "bring me the blue cup",
+      "transcript": "bring me the blue cup",
+      "event": "REQUEST",
+      "target": "blue",
+      "decision": "select",
+      "before": {
+        "mode": "Shared autonomy with voice",
+        "scenario": "cancel",
+        "phase": "IDLE",
+        "position": 0,
+        "target": null,
+        "held": null,
+        "delivered": null,
+        "confirmed": false,
+        "checkpoint_seen": false,
+        "waiting_for_change": false,
+        "ros": true
+      },
+      "after": {
+        "mode": "Shared autonomy with voice",
+        "scenario": "cancel",
+        "phase": "CONFIRM",
+        "position": 0,
+        "target": "blue",
+        "held": null,
+        "delivered": null,
+        "confirmed": false,
+        "checkpoint_seen": false,
+        "waiting_for_change": false,
+        "ros": true
+      },
+      "feedback": "I understood blue. Say confirm or correct the cup.",
+      "ros_pose": [
+        8.478136492771163e-13,
+        -4.3641614116813995e-24,
+        -8.501832572066097e-12
+      ],
+      "ros_distance_m": 0.0
+    },
+    {
+      "seconds": 28.96,
+      "source": "voice",
+      "intended": "confirm",
+      "transcript": "confirm",
+      "event": "REVIEW",
+      "target": null,
+      "decision": "review",
+      "before": {
+        "mode": "Shared autonomy with voice",
+        "scenario": "cancel",
+        "phase": "CONFIRM",
+        "position": 0,
+        "target": "blue",
+        "held": null,
+        "delivered": null,
+        "confirmed": false,
+        "checkpoint_seen": false,
+        "waiting_for_change": false,
+        "ros": true
+      },
+      "after": {
+        "mode": "Shared autonomy with voice",
+        "scenario": "cancel",
+        "phase": "CONFIRM",
+        "position": 0,
+        "target": "blue",
+        "held": null,
+        "delivered": null,
+        "confirmed": false,
+        "checkpoint_seen": false,
+        "waiting_for_change": false,
+        "ros": true
+      },
+      "feedback": "Review the recognized permission before applying it. I understood blue. Say confirm or correct the cup.",
+      "ros_pose": [
+        8.478123974747074e-13,
+        -4.364150769045716e-24,
+        -8.501876278176519e-12
+      ],
+      "ros_distance_m": 0.0
+    },
+    {
+      "seconds": 32.11,
+      "source": "approval",
+      "intended": "",
+      "transcript": "",
+      "event": "CONFIRM",
+      "target": null,
+      "decision": "begin",
+      "before": {
+        "mode": "Shared autonomy with voice",
+        "scenario": "cancel",
+        "phase": "CONFIRM",
+        "position": 0,
+        "target": "blue",
+        "held": null,
+        "delivered": null,
+        "confirmed": false,
+        "checkpoint_seen": false,
+        "waiting_for_change": false,
+        "ros": true
+      },
+      "after": {
+        "mode": "Shared autonomy with voice",
+        "scenario": "cancel",
+        "phase": "EXECUTING",
+        "position": 0,
+        "target": "blue",
+        "held": null,
+        "delivered": null,
+        "confirmed": true,
+        "checkpoint_seen": false,
+        "waiting_for_change": false,
+        "ros": true
+      },
+      "feedback": "Currently pausing...Would you like to proceed with cancel? If so confirm by inputting cancel again. Or you can input a new command",
+      "ros_pose": [
+        8.478133085681322e-13,
+        -4.364158515051821e-24,
+        -8.501881765631788e-12
+      ],
+      "ros_distance_m": 0.0
+    },
+    {
+      "seconds": 35.86,
+      "source": "simulation",
+      "intended": "",
+      "transcript": "",
+      "event": "TICK",
+      "target": null,
+      "decision": "advance",
+      "before": {
+        "mode": "Shared autonomy with voice",
+        "scenario": "cancel",
+        "phase": "EXECUTING",
+        "position": 0,
+        "target": "blue",
+        "held": null,
+        "delivered": null,
+        "confirmed": true,
+        "checkpoint_seen": false,
+        "waiting_for_change": false,
+        "ros": true
+      },
+      "after": {
+        "mode": "Shared autonomy with voice",
+        "scenario": "cancel",
+        "phase": "EXECUTING",
+        "position": 1,
+        "target": "blue",
+        "held": null,
+        "delivered": null,
+        "confirmed": true,
+        "checkpoint_seen": false,
+        "waiting_for_change": false,
+        "ros": true
+      },
+      "feedback": "Currently pausing...Would you like to proceed with cancel? If so confirm by inputting cancel again. Or you can input a new command",
+      "ros_pose": [
+        0.9038383797377387,
+        -3.1031283597235527e-13,
+        -7.83074727966516e-12
+      ],
+      "ros_distance_m": 0.904
+    },
+    {
+      "seconds": 39.91,
+      "source": "simulation",
+      "intended": "",
+      "transcript": "",
+      "event": "TICK",
+      "target": null,
+      "decision": "advance",
+      "before": {
+        "mode": "Shared autonomy with voice",
+        "scenario": "cancel",
+        "phase": "EXECUTING",
+        "position": 1,
+        "target": "blue",
+        "held": null,
+        "delivered": null,
+        "confirmed": true,
+        "checkpoint_seen": false,
+        "waiting_for_change": false,
+        "ros": true
+      },
+      "after": {
+        "mode": "Shared autonomy with voice",
+        "scenario": "cancel",
+        "phase": "EXECUTING",
+        "position": 2,
+        "target": "blue",
+        "held": null,
+        "delivered": null,
+        "confirmed": true,
+        "checkpoint_seen": true,
+        "waiting_for_change": true,
+        "ros": true
+      },
+      "feedback": "Paused at the marked checkpoint. Give the correction or cancel as directed.",
+      "ros_pose": [
+        1.9044024940118345,
+        -6.992350138633196e-13,
+        -4.320198865562997e-12
+      ],
+      "ros_distance_m": 1.904
+    },
+    {
+      "seconds": 40.41,
+      "source": "voice",
+      "intended": "cancel",
+      "transcript": "cancel",
+      "event": "CANCEL",
+      "target": null,
+      "decision": "cancel",
+      "before": {
+        "mode": "Shared autonomy with voice",
+        "scenario": "cancel",
+        "phase": "EXECUTING",
+        "position": 2,
+        "target": "blue",
+        "held": null,
+        "delivered": null,
+        "confirmed": true,
+        "checkpoint_seen": true,
+        "waiting_for_change": true,
+        "ros": true
+      },
+      "after": {
+        "mode": "Shared autonomy with voice",
+        "scenario": "cancel",
+        "phase": "CANCELLED",
+        "position": 2,
+        "target": "blue",
+        "held": null,
+        "delivered": null,
+        "confirmed": false,
+        "checkpoint_seen": true,
+        "waiting_for_change": false,
+        "ros": true
+      },
+      "feedback": "Cancelled. The robot has stopped.",
+      "ros_pose": [
+        1.905045491251265,
+        -7.019571732017434e-13,
+        -1.3613577939986261e-11
+      ],
+      "ros_distance_m": 1.905
+    },
+    {
+      "seconds": 88.67,
+      "source": "voice",
+      "intended": "continue",
+      "transcript": "",
+      "event": "UNRECOGNIZED",
+      "target": null,
+      "decision": "repeat",
+      "before": {
+        "mode": "Shared autonomy with voice",
+        "scenario": "cancel",
+        "phase": "CANCELLED",
+        "position": 2,
+        "target": "blue",
+        "held": null,
+        "delivered": null,
+        "confirmed": false,
+        "checkpoint_seen": true,
+        "waiting_for_change": false,
+        "ros": true
+      },
+      "after": {
+        "mode": "Shared autonomy with voice",
+        "scenario": "cancel",
+        "phase": "CANCELLED",
+        "position": 2,
+        "target": "blue",
+        "held": null,
+        "delivered": null,
+        "confirmed": false,
+        "checkpoint_seen": true,
+        "waiting_for_change": false,
+        "ros": true
+      },
+      "feedback": "Command unclear. Try again or use the typed input.",
+      "ros_pose": [
+        1.9050454912521133,
+        -7.019571732158182e-13,
+        -1.9528320116473618e-11
+      ],
+      "ros_distance_m": 1.905
+    },
+    {
+      "seconds": 104.7,
+      "source": "voice",
+      "intended": "bring me the blue cup",
+      "transcript": "bring me the blue cup",
+      "event": "REQUEST",
+      "target": "blue",
+      "decision": "select",
+      "before": {
+        "mode": "Shared autonomy with voice",
+        "scenario": "cancel",
+        "phase": "CANCELLED",
+        "position": 2,
+        "target": "blue",
+        "held": null,
+        "delivered": null,
+        "confirmed": false,
+        "checkpoint_seen": true,
+        "waiting_for_change": false,
+        "ros": true
+      },
+      "after": {
+        "mode": "Shared autonomy with voice",
+        "scenario": "cancel",
+        "phase": "CONFIRM",
+        "position": 2,
+        "target": "blue",
+        "held": null,
+        "delivered": null,
+        "confirmed": false,
+        "checkpoint_seen": true,
+        "waiting_for_change": false,
+        "ros": true
+      },
+      "feedback": "I understood blue. Say confirm or correct the cup.",
+      "ros_pose": [
+        1.9050454912523678,
+        -7.019571732210206e-13,
+        -2.1303129606710636e-11
+      ],
+      "ros_distance_m": 1.905
+    },
+    {
+      "seconds": 114.52,
+      "source": "voice",
+      "intended": "confirm",
+      "transcript": "confirm",
+      "event": "REVIEW",
+      "target": null,
+      "decision": "review",
+      "before": {
+        "mode": "Shared autonomy with voice",
+        "scenario": "cancel",
+        "phase": "CONFIRM",
+        "position": 2,
+        "target": "blue",
+        "held": null,
+        "delivered": null,
+        "confirmed": false,
+        "checkpoint_seen": true,
+        "waiting_for_change": false,
+        "ros": true
+      },
+      "after": {
+        "mode": "Shared autonomy with voice",
+        "scenario": "cancel",
+        "phase": "CONFIRM",
+        "position": 2,
+        "target": "blue",
+        "held": null,
+        "delivered": null,
+        "confirmed": false,
+        "checkpoint_seen": true,
+        "waiting_for_change": false,
+        "ros": true
+      },
+      "feedback": "Review the recognized permission before applying it. I understood blue. Say confirm or correct the cup.",
+      "ros_pose": [
+        1.9050454912525374,
+        -7.019571732247392e-13,
+        -2.2486078042008108e-11
+      ],
+      "ros_distance_m": 1.905
+    },
+    {
+      "seconds": 116.89,
+      "source": "approval",
+      "intended": "",
+      "transcript": "",
+      "event": "CONFIRM",
+      "target": null,
+      "decision": "begin",
+      "before": {
+        "mode": "Shared autonomy with voice",
+        "scenario": "cancel",
+        "phase": "CONFIRM",
+        "position": 2,
+        "target": "blue",
+        "held": null,
+        "delivered": null,
+        "confirmed": false,
+        "checkpoint_seen": true,
+        "waiting_for_change": false,
+        "ros": true
+      },
+      "after": {
+        "mode": "Shared autonomy with voice",
+        "scenario": "cancel",
+        "phase": "EXECUTING",
+        "position": 2,
+        "target": "blue",
+        "held": null,
+        "delivered": null,
+        "confirmed": true,
+        "checkpoint_seen": true,
+        "waiting_for_change": false,
+        "ros": true
+      },
+      "feedback": "Currently pausing...Would you like to proceed with cancel? If so confirm by inputting cancel again. Or you can input a new command",
+      "ros_pose": [
+        1.9050454912526225,
+        -7.019571732266725e-13,
+        -2.3077165422366034e-11
+      ],
+      "ros_distance_m": 1.905
+    },
+    {
+      "seconds": 120.87,
+      "source": "simulation",
+      "intended": "",
+      "transcript": "",
+      "event": "TICK",
+      "target": null,
+      "decision": "advance",
+      "before": {
+        "mode": "Shared autonomy with voice",
+        "scenario": "cancel",
+        "phase": "EXECUTING",
+        "position": 2,
+        "target": "blue",
+        "held": null,
+        "delivered": null,
+        "confirmed": true,
+        "checkpoint_seen": true,
+        "waiting_for_change": false,
+        "ros": true
+      },
+      "after": {
+        "mode": "Shared autonomy with voice",
+        "scenario": "cancel",
+        "phase": "EXECUTING",
+        "position": 3,
+        "target": "blue",
+        "held": null,
+        "delivered": null,
+        "confirmed": true,
+        "checkpoint_seen": true,
+        "waiting_for_change": false,
+        "ros": true
+      },
+      "feedback": "Currently pausing...Would you like to proceed with cancel? If so confirm by inputting cancel again. Or you can input a new command",
+      "ros_pose": [
+        2.90244928456345,
+        -1.1925432898733673e-12,
+        -8.170003599863659e-13
+      ],
+      "ros_distance_m": 2.902
+    },
+    {
+      "seconds": 124.87,
+      "source": "simulation",
+      "intended": "",
+      "transcript": "",
+      "event": "TICK",
+      "target": null,
+      "decision": "advance",
+      "before": {
+        "mode": "Shared autonomy with voice",
+        "scenario": "cancel",
+        "phase": "EXECUTING",
+        "position": 3,
+        "target": "blue",
+        "held": null,
+        "delivered": null,
+        "confirmed": true,
+        "checkpoint_seen": true,
+        "waiting_for_change": false,
+        "ros": true
+      },
+      "after": {
+        "mode": "Shared autonomy with voice",
+        "scenario": "cancel",
+        "phase": "EXECUTING",
+        "position": 4,
+        "target": "blue",
+        "held": null,
+        "delivered": null,
+        "confirmed": true,
+        "checkpoint_seen": true,
+        "waiting_for_change": false,
+        "ros": true
+      },
+      "feedback": "Currently pausing...Would you like to proceed with cancel? If so confirm by inputting cancel again. Or you can input a new command",
+      "ros_pose": [
+        3.900723422841884,
+        -4.1706453640597123e-13,
+        -6.782031384279034e-12
+      ],
+      "ros_distance_m": 3.901
+    },
+    {
+      "seconds": 127.87,
+      "source": "voice",
+      "intended": "cancel",
+      "transcript": "cancel",
+      "event": "CANCEL",
+      "target": null,
+      "decision": "cancel",
+      "before": {
+        "mode": "Shared autonomy with voice",
+        "scenario": "cancel",
+        "phase": "EXECUTING",
+        "position": 4,
+        "target": "blue",
+        "held": null,
+        "delivered": null,
+        "confirmed": true,
+        "checkpoint_seen": true,
+        "waiting_for_change": false,
+        "ros": true
+      },
+      "after": {
+        "mode": "Shared autonomy with voice",
+        "scenario": "cancel",
+        "phase": "CANCELLED",
+        "position": 4,
+        "target": "blue",
+        "held": null,
+        "delivered": null,
+        "confirmed": false,
+        "checkpoint_seen": true,
+        "waiting_for_change": false,
+        "ros": true
+      },
+      "feedback": "Cancelled. The robot has stopped.",
+      "ros_pose": [
+        4.780012846352046,
+        7.145992361665864e-13,
+        -1.57148781036673e-11
+      ],
+      "ros_distance_m": 4.78
+    }
+  ],
+  "start": 1795246669.3354816,
+  "finished": 1795246809.8426073,
+  "opened": 1795246651.8385656,
+  "entered": 1795246797.2098665,
+  "redesign": {
+    "case": "cancel",
+    "phase": "EXECUTING",
+    "message": "Currently pausing...Would you like to proceed with cancel? If so confirm by inputting cancel again. Or you can input a new command",
+    "rationale": "I got a little confused as to what it was asking me when I cancelled. I assumed that the cancel would stop everything completely, but it paused and then had a vague instruction afterwards. But here the user should know that it has stopped for now but that it is not completely cancelled until they confirm it or give it a new command."
+  },
+  "ros": {
+    "pose": [
+      4.780012846352046,
+      7.145992361665864e-13,
+      -1.57148781036673e-11
+    ],
+    "distance_m": 4.78,
+    "topic": "/odom",
+    "backend": "ROS 2 / Gazebo"
+  },
+  "outcome": "Cancelled",
+  "elapsed": 158.0,
+  "controller_elapsed": 140.5,
+  "inputs": 10
+}

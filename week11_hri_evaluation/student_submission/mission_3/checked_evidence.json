@@ -1,0 +1,242 @@
+{
+  "design_changes": [
+    {
+      "change": "Confirmation timeout increased from 18 s to 30 s",
+      "baseline_observation": "clear_request: a delay in confirming led to an error and the participant was unsure whether to ask again",
+      "mechanism": "A longer window gives a slow confirmation time to arrive before the request expires"
+    },
+    {
+      "change": "Listening message now includes an example request, the yes reply, and recovery instructions after a timeout",
+      "baseline_observation": "no_response and alternate_modality: the participant did not know what to do after the timeout or what format to type",
+      "mechanism": "Showing the expected input and the next step at the moment of listening removes the need to guess"
+    }
+  ],
+  "baseline": {
+    "participant_code": "P-2305",
+    "trials": [
+      {
+        "scenario_id": "clear_request",
+        "task_success": true,
+        "intent_understood": true,
+        "listening_state_clear": true,
+        "recovered_without_facilitator": true,
+        "predictability_rating": 3,
+        "feedback_rating": 3,
+        "access_barrier": "",
+        "safety_stop": false,
+        "completion_time_s": 20.0,
+        "note": "participant asked robot to bring cup to them specifically and there was delay in confirming so when they told me to say yes there was an error. They weren't sure if they needed to ask again but they did and then said yes immediately."
+      },
+      {
+        "scenario_id": "no_response",
+        "task_success": true,
+        "intent_understood": false,
+        "listening_state_clear": true,
+        "recovered_without_facilitator": true,
+        "predictability_rating": 5,
+        "feedback_rating": 5,
+        "access_barrier": "",
+        "safety_stop": false,
+        "completion_time_s": 5.0,
+        "note": "participant didn't confirm as per instructions but they were not sure what to do afterwards because there was nothing else for them to do."
+      },
+      {
+        "scenario_id": "correction",
+        "task_success": true,
+        "intent_understood": true,
+        "listening_state_clear": true,
+        "recovered_without_facilitator": true,
+        "predictability_rating": 4,
+        "feedback_rating": 5,
+        "access_barrier": "",
+        "safety_stop": false,
+        "completion_time_s": 40.0,
+        "note": "participant didn't use the same exact words to correct the command but the task was completed the same"
+      },
+      {
+        "scenario_id": "ambiguous_request",
+        "task_success": true,
+        "intent_understood": true,
+        "listening_state_clear": true,
+        "recovered_without_facilitator": true,
+        "predictability_rating": 4,
+        "feedback_rating": 5,
+        "access_barrier": "",
+        "safety_stop": false,
+        "completion_time_s": 45.0,
+        "note": "participant asked to bring the cup then when asked to clarify they said red cup and then had to confirm. They seemed to get a hang of it by this point"
+      },
+      {
+        "scenario_id": "alternate_modality",
+        "task_success": false,
+        "intent_understood": true,
+        "listening_state_clear": true,
+        "recovered_without_facilitator": true,
+        "predictability_rating": 2,
+        "feedback_rating": 2,
+        "access_barrier": "",
+        "safety_stop": false,
+        "completion_time_s": 90.0,
+        "note": "they tried typing in commands but since they were typing it normally without the proper syntax nothing was happening and they were very confused."
+      }
+    ]
+  },
+  "redesign": {
+    "participant_code": "P-2305",
+    "trials": [
+      {
+        "scenario_id": "clear_request",
+        "task_success": true,
+        "intent_understood": true,
+        "listening_state_clear": true,
+        "recovered_without_facilitator": true,
+        "predictability_rating": 5,
+        "feedback_rating": 5,
+        "access_barrier": "",
+        "safety_stop": false,
+        "completion_time_s": 10.0,
+        "note": "Move through this one pretty quickly because they knew what to expect"
+      },
+      {
+        "scenario_id": "no_response",
+        "task_success": true,
+        "intent_understood": true,
+        "listening_state_clear": true,
+        "recovered_without_facilitator": true,
+        "predictability_rating": 5,
+        "feedback_rating": 5,
+        "access_barrier": "",
+        "safety_stop": false,
+        "completion_time_s": 5.0,
+        "note": "This is always the same because there is nothing to really do when there is a timeout but they liked that listening command let them know that if there is a error or timeout that they need to put in the command again."
+      },
+      {
+        "scenario_id": "correction",
+        "task_success": true,
+        "intent_understood": true,
+        "listening_state_clear": true,
+        "recovered_without_facilitator": true,
+        "predictability_rating": 5,
+        "feedback_rating": 5,
+        "access_barrier": "",
+        "safety_stop": false,
+        "completion_time_s": 35.0,
+        "note": "This was slightly faster but there were no changes made for this particulary so I think it was just the user."
+      },
+      {
+        "scenario_id": "ambiguous_request",
+        "task_success": true,
+        "intent_understood": true,
+        "listening_state_clear": true,
+        "recovered_without_facilitator": true,
+        "predictability_rating": 5,
+        "feedback_rating": 5,
+        "access_barrier": "",
+        "safety_stop": false,
+        "completion_time_s": 45.0,
+        "note": "They followed what they did before so it wasn't any different"
+      },
+      {
+        "scenario_id": "alternate_modality",
+        "task_success": true,
+        "intent_understood": true,
+        "listening_state_clear": true,
+        "recovered_without_facilitator": true,
+        "predictability_rating": 5,
+        "feedback_rating": 5,
+        "access_barrier": "",
+        "safety_stop": false,
+        "completion_time_s": 60.0,
+        "note": "Since they had more time for commands it was a little easier but syntax is still an issue"
+      }
+    ]
+  },
+  "comparison": {
+    "baseline": {
+      "trial_count": 5,
+      "scenario_coverage": 5,
+      "valid_trials": 5,
+      "task_success_rate": 0.8,
+      "intent_comprehension_rate": 0.8,
+      "listening_clarity_rate": 1.0,
+      "recovery_rate": 1.0,
+      "mean_predictability": 3.6,
+      "mean_feedback_clarity": 4.0,
+      "access_barriers": 0,
+      "safety_stops": 0,
+      "mean_completion_time_s": 40.0
+    },
+    "redesign": {
+      "trial_count": 5,
+      "scenario_coverage": 5,
+      "valid_trials": 5,
+      "task_success_rate": 1.0,
+      "intent_comprehension_rate": 1.0,
+      "listening_clarity_rate": 1.0,
+      "recovery_rate": 1.0,
+      "mean_predictability": 5.0,
+      "mean_feedback_clarity": 5.0,
+      "access_barriers": 0,
+      "safety_stops": 0,
+      "mean_completion_time_s": 31.0
+    },
+    "matched_scenarios": 5,
+    "improved_metrics": [
+      "task_success_rate",
+      "intent_comprehension_rate",
+      "mean_predictability",
+      "mean_feedback_clarity"
+    ],
+    "participant_match": true
+  },
+  "checks": [
+    {
+      "label": "Matched participant and scenarios",
+      "passed": true,
+      "actual": [
+        true,
+        5
+      ],
+      "expected": "same code and 5 matched scenarios"
+    },
+    {
+      "label": "At least two implemented changes",
+      "passed": true,
+      "actual": 2,
+      "expected": ">= 2"
+    },
+    {
+      "label": "No regression in success",
+      "passed": true,
+      "actual": [
+        0.8,
+        1.0
+      ],
+      "expected": "redesign >= baseline"
+    },
+    {
+      "label": "At least two target metrics improve",
+      "passed": true,
+      "actual": [
+        "task_success_rate",
+        "intent_comprehension_rate",
+        "mean_predictability",
+        "mean_feedback_clarity"
+      ],
+      "expected": ">= 2"
+    },
+    {
+      "label": "No access barriers in retest",
+      "passed": true,
+      "actual": 0,
+      "expected": "0"
+    },
+    {
+      "label": "No safety-stop event",
+      "passed": true,
+      "actual": 0,
+      "expected": "0"
+    }
+  ],
+  "passed": true
+}

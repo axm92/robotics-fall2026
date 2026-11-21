@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "design_version": "baseline",
+  "participant_code": "P-2305",
+  "consent_confirmed": true,
+  "recording_used": false,
+  "trials": [
+    {
+      "scenario_id": "clear_request",
+      "task_success": true,
+      "intent_understood": true,
+      "listening_state_clear": true,
+      "recovered_without_facilitator": true,
+      "predictability_rating": 3,
+      "feedback_rating": 3,
+      "access_barrier": "none",
+      "safety_stop": false,
+      "completion_time_s": 20.0,
+      "note": "participant asked robot to bring cup to them specifically and there was delay in confirming so when they told me to say yes there was an error. They weren't sure if they needed to ask again but they did and then said yes immediately."
+    },
+    {
+      "scenario_id": "no_response",
+      "task_success": true,
+      "intent_understood": false,
+      "listening_state_clear": true,
+      "recovered_without_facilitator": true,
+      "predictability_rating": 5,
+      "feedback_rating": 5,
+      "access_barrier": "none",
+      "safety_stop": false,
+      "completion_time_s": 5.0,
+      "note": "participant didn't confirm as per instructions but they were not sure what to do afterwards because there was nothing else for them to do."
+    },
+    {
+      "scenario_id": "correction",
+      "task_success": true,
+      "intent_understood": true,
+      "listening_state_clear": true,
+      "recovered_without_facilitator": true,
+      "predictability_rating": 4,
+      "feedback_rating": 5,
+      "access_barrier": "none",
+      "safety_stop": false,
+      "completion_time_s": 40.0,
+      "note": "participant didn't use the same exact words to correct the command but the task was completed the same"
+    },
+    {
+      "scenario_id": "ambiguous_request",
+      "task_success": true,
+      "intent_understood": true,
+      "listening_state_clear": true,
+      "recovered_without_facilitator": true,
+      "predictability_rating": 4,
+      "feedback_rating": 5,
+      "access_barrier": "none",
+      "safety_stop": false,
+      "completion_time_s": 45.0,
+      "note": "participant asked to bring the cup then when asked to clarify they said red cup and then had to confirm. They seemed to get a hang of it by this point"
+    },
+    {
+      "scenario_id": "alternate_modality",
+      "task_success": false,
+      "intent_understood": true,
+      "listening_state_clear": true,
+      "recovered_without_facilitator": true,
+      "predictability_rating": 2,
+      "feedback_rating": 2,
+      "access_barrier": "none",
+      "safety_stop": false,
+      "completion_time_s": 90.0,
+      "note": "they tried typing in commands but since they were typing it normally without the proper syntax nothing was happening and they were very confused."
+    }
+  ]
+}

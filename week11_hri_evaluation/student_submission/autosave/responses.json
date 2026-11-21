@@ -1,0 +1,365 @@
+{
+  "schema_version": 1,
+  "lab_id": "week11_hri_evaluation",
+  "student": {
+    "name": "Amaya Mangual",
+    "email": "amaya.mangual74@login.cuny.edu"
+  },
+  "responses": {
+    "mission_1.flow": "When an interaction starts with the display showing that it is listening and we can type our command/request. When no command has been entered it times out and no action is taken. This is good because if no action has been entered it prevents anything from happening. Then when a command was entered like, \"bring the blue cup\" it lets the user know what it heard and asks it to confirm or correct the command. This lets us see if it is properly hearing our request and allows us to edit if there is any problem. Without confirmation no action is taken, which is the safest decision that could be made. After confirming it lets you know that the action is confirmed and then lets you know when it is complete and then waits for any other commands.  Each distinct cue lets the person know what is going on at all times which is very helpful. ",
+    "mission_1.predictions": "I predict that a point of confusion would be when there is a very vague action given or if the confirmation command is given too late. With a vague command I would expect there to be a state where it asks to clarify or maybe even an error would come up because it needs more information. For a delayed confirmation if it times out then it would support my prediction. ",
+    "mission_1.safety": "The stop completely shuts down and stops what is currently happening, whether there is action being done or not. So, if it is in the middle of completing a task or asking for confirmation it stops motion and task execution. Timeout is there so that the robot will never act on a stale request or one that wasn't confirmed. Without timeout the robot could act on a action that is no longer valid causing even more problems. Cancellation cancels the request and waits for a new one, giving the user control on what the robot should execute. Its ambiguity behavior is good because when given vague tasks it asks for a more specific command and gives information that will help the person give a more guided instruction. ",
+    "mission_2.observations": "I think the most important observed behaviors are how the participant reacted to giving commands and then being met with confirmation but confirming too late. This seemed to be an annoyance for the participant because they felt as if they didn't have enough time to read and respond. As time went on the reaction time became faster because they became accustomed to it, but this is a way to show how one can also be trained by a machine and its not always a person training a machine. I also noticed this myself when completing earlier tasks. Starting off was relatively annoying because I thought I would have more time to confirm before it stopped and disregarded that command. ",
+    "mission_2.breakdown": "Predictability is interesting here because something becomes predictable when you have seen something enough times before. At first the confirmation wasn't completely predictable to the participant because they assumed that after the command the robot would just complete the task. But after seeing that the first time it became predictable for future commands. The way the display screen shows this also help in its predictability because if there was no display then the user would have no idea what is happening and that would make it completely unpredictable. ",
+    "mission_2.limits": "It can be concluded that someone who has never used this system is able to give commands to a robot however it can't be concluded that this approach is the best and most transparent and safe for the real world. While it may be something that anyone can give commands to, it is specific to one scenario and doesn't really provide how it would interact in other environments. ",
+    "mission_3.rationale": "I made two changes. The first was to increase the confirmation timeout from 18 seconds to 30 seconds. In the baseline clear_request trial, the participant hesitated before confirming, and my relayed \u201cyes\u201d arrived after the request had expired, producing an error. The participant was then unsure whether they had to ask again. A longer window should let a slower confirmation arrive before the request expires, so a short pause no longer causes a failure. The second change was to rewrite the listening message so it gives an example request, says to reply \u201cyes\u201d after the robot repeats it, and says that after a timeout nothing happened and they should type the request again. In the baseline no_response trial, the participant did not know what to do after the timeout, and in alternate_modality they typed a command without the expected syntax and nothing happened. Showing the expected input and the recovery step at the moment of listening removes the need to guess. In the retest, the participant said they liked that the listening message told them to enter the command again after an error or timeout.",
+    "mission_3.comparison": "With the same participant (P-2305) and the same five scenarios, task success rose from 0.8 to 1.0 and intent comprehension rose from 0.8 to 1.0. Mean predictability rose from 3.6 to 5.0 and mean feedback clarity rose from 4.0 to 5.0. Listening clarity and recovery stayed at 1.0, and there were no safety stops in either session, so I found no regressions. Mean completion time fell from 40 seconds to 31 seconds. Most of that came from clear_request (20 s to 10 s) and alternate_modality (90 s to 60 s). The correction trial was 5 seconds faster even though nothing was changed for that scenario, which suggests the participant, not the redesign, caused that gain. The no_response and ambiguous_request times were unchanged. These results should be read cautiously. The participant saw the same five scenarios in the same order, so learning effects are likely. In fact, I noted that they moved through the first scenario quickly because they knew what to expect. I was still the facilitator, and the ratings are all 5s from one person, so these results cannot show that the redesign is generally more usable. One problem remains. The alternate_modality task succeeded in the retest, but the participant said syntax was still an issue, so the root cause was only softened.",
+    "mission_3.next_iteration": "For the next iteration, the main target is the text-command syntax problem that remained in alternate_modality. The accessibility improvement would be to accept plain-language text input, or at least to show a syntax example in the text-command prompt. This would help people who cannot or prefer not to use the primary command method, and it would remove the dependency on knowing a command format. I would also add a new failure-recovery test, a malformed command scenario. The participant types a command the system cannot parse, and I observe whether the display tells them what went wrong and how to fix it, whether they recover without facilitator help, and how long it takes. This tests a failure the current five scenarios do not cover. It would also be better to run the next test with a new participant and a different scenario order, so learning and order effects are separated from the effect of the design.",
+    "final.synthesis": "An understandable interaction tells the person what the robot heard, what it is waiting for, and what to do next. In the baseline, the participant\u2019s confusion came from missing information, not from their own error. After a timeout in no_response, they did not know what to do next. In alternate_modality, they typed ordinary text and nothing happened, with no sign of why. Adding an example request and a \u201ctype it again\u201d instruction to the listening message made the next step visible at the moment it mattered. In the retest, the participant said they liked that instruction. A recoverable interaction fails safely and lets people try again without penalty. The baseline clear_request trial showed the cost of a tight confirmation window: a short hesitation ended in an error, and the participant was unsure whether to repeat the request. Lengthening the window from 18 to 30 seconds gave slower responses room to succeed. Task success rose from 0.8 to 1.0, and mean predictability rose from 3.6 to 5.0. An accessible interaction does not depend on one input method or on hidden syntax. The text-command trial improved from failure to success, but the participant said syntax was still an issue, so access was only partly solved.\n\nIt's important to point out that these findings are limited. One participant did the same five scenarios in the same order, so learning effects are likely, and the correction trial got faster even though nothing changed for it. I was the one typing the commands, and all-5 ratings from one person cannot show general usability. The results suggest the changes helped, but a larger and more varied study would be needed to confirm it.",
+    "final.course_reflection": "This activity helped build on my idea of what strong commands are and how to effectively communicate with a robot and how they can match that communication without being too much. Confirmation is always important and helpful, but it is good to know when it is needed or not. If there is a task that you give a robot and it asks to make sure it understood what you want done, that is good, but if it asks about every little thing it could be unnecessary and take up more time than needed. For our own robot since it will be one that works in tandemn with a sanitation worker I would hope for us to build proper communication where the robot learns who it is working with and when to ask for confirmation and when to just do the task. For example, it's main task is to safely pick up trash, if it is asked to move to a different area and asks to confirm which area, that is good. However, if it asks if it should pick up trash or asks about each specific piece then that is pointless because that is what it is made to do. \n\nOne thing that stood out to me about this lab was that for the speaking commands it was just typing them out in a very extensive syntax. I'm not sure if that was just a problem on my end but it makes it a little hard for me to see how a robot directly reacts to verbal speech and not reading it from a script. "
+  },
+  "completed_missions": [
+    "mission_1",
+    "mission_2",
+    "mission_3"
+  ],
+  "evidence": {
+    "preflight": {
+      "ready": true,
+      "output": "[PASS] Python >= 3.10: 3.12.3\n[PASS] ROS 2 CLI: /opt/ros/jazzy/bin/ros2\n[PASS] ROS_DISTRO is jazzy: jazzy\n[PASS] Package rclpy: found\n[PASS] Package std_msgs: found\n[PASS] Package geometry_msgs: found\n[PASS] Package week11_hri_demo: found\n",
+      "protocol": true,
+      "motion_enabled": false
+    },
+    "mission_1": {
+      "observed_states": [
+        "IDLE",
+        "LISTENING",
+        "CONFIRMING",
+        "ANNOUNCE",
+        "APPROACH",
+        "ACTING",
+        "COMPLETE",
+        "ERROR"
+      ],
+      "motion_enabled": false,
+      "stop_tested": true,
+      "dry_runs": 2
+    },
+    "mission_2": {
+      "schema_version": 1,
+      "design_version": "baseline",
+      "participant_code": "P-2305",
+      "consent_confirmed": true,
+      "recording_used": false,
+      "trials": [
+        {
+          "scenario_id": "clear_request",
+          "task_success": true,
+          "intent_understood": true,
+          "listening_state_clear": true,
+          "recovered_without_facilitator": true,
+          "predictability_rating": 3,
+          "feedback_rating": 3,
+          "access_barrier": "none",
+          "safety_stop": false,
+          "completion_time_s": 20.0,
+          "note": "participant asked robot to bring cup to them specifically and there was delay in confirming so when they told me to say yes there was an error. They weren't sure if they needed to ask again but they did and then said yes immediately."
+        },
+        {
+          "scenario_id": "no_response",
+          "task_success": true,
+          "intent_understood": false,
+          "listening_state_clear": true,
+          "recovered_without_facilitator": true,
+          "predictability_rating": 5,
+          "feedback_rating": 5,
+          "access_barrier": "none",
+          "safety_stop": false,
+          "completion_time_s": 5.0,
+          "note": "participant didn't confirm as per instructions but they were not sure what to do afterwards because there was nothing else for them to do."
+        },
+        {
+          "scenario_id": "correction",
+          "task_success": true,
+          "intent_understood": true,
+          "listening_state_clear": true,
+          "recovered_without_facilitator": true,
+          "predictability_rating": 4,
+          "feedback_rating": 5,
+          "access_barrier": "none",
+          "safety_stop": false,
+          "completion_time_s": 40.0,
+          "note": "participant didn't use the same exact words to correct the command but the task was completed the same"
+        },
+        {
+          "scenario_id": "ambiguous_request",
+          "task_success": true,
+          "intent_understood": true,
+          "listening_state_clear": true,
+          "recovered_without_facilitator": true,
+          "predictability_rating": 4,
+          "feedback_rating": 5,
+          "access_barrier": "none",
+          "safety_stop": false,
+          "completion_time_s": 45.0,
+          "note": "participant asked to bring the cup then when asked to clarify they said red cup and then had to confirm. They seemed to get a hang of it by this point"
+        },
+        {
+          "scenario_id": "alternate_modality",
+          "task_success": false,
+          "intent_understood": true,
+          "listening_state_clear": true,
+          "recovered_without_facilitator": true,
+          "predictability_rating": 2,
+          "feedback_rating": 2,
+          "access_barrier": "none",
+          "safety_stop": false,
+          "completion_time_s": 90.0,
+          "note": "they tried typing in commands but since they were typing it normally without the proper syntax nothing was happening and they were very confused."
+        }
+      ]
+    },
+    "mission_3": {
+      "design_changes": [
+        {
+          "change": "Confirmation timeout increased from 18 s to 30 s",
+          "baseline_observation": "clear_request: a delay in confirming led to an error and the participant was unsure whether to ask again",
+          "mechanism": "A longer window gives a slow confirmation time to arrive before the request expires"
+        },
+        {
+          "change": "Listening message now includes an example request, the yes reply, and recovery instructions after a timeout",
+          "baseline_observation": "no_response and alternate_modality: the participant did not know what to do after the timeout or what format to type",
+          "mechanism": "Showing the expected input and the next step at the moment of listening removes the need to guess"
+        }
+      ],
+      "baseline": {
+        "participant_code": "P-2305",
+        "trials": [
+          {
+            "scenario_id": "clear_request",
+            "task_success": true,
+            "intent_understood": true,
+            "listening_state_clear": true,
+            "recovered_without_facilitator": true,
+            "predictability_rating": 3,
+            "feedback_rating": 3,
+            "access_barrier": "",
+            "safety_stop": false,
+            "completion_time_s": 20.0,
+            "note": "participant asked robot to bring cup to them specifically and there was delay in confirming so when they told me to say yes there was an error. They weren't sure if they needed to ask again but they did and then said yes immediately."
+          },
+          {
+            "scenario_id": "no_response",
+            "task_success": true,
+            "intent_understood": false,
+            "listening_state_clear": true,
+            "recovered_without_facilitator": true,
+            "predictability_rating": 5,
+            "feedback_rating": 5,
+            "access_barrier": "",
+            "safety_stop": false,
+            "completion_time_s": 5.0,
+            "note": "participant didn't confirm as per instructions but they were not sure what to do afterwards because there was nothing else for them to do."
+          },
+          {
+            "scenario_id": "correction",
+            "task_success": true,
+            "intent_understood": true,
+            "listening_state_clear": true,
+            "recovered_without_facilitator": true,
+            "predictability_rating": 4,
+            "feedback_rating": 5,
+            "access_barrier": "",
+            "safety_stop": false,
+            "completion_time_s": 40.0,
+            "note": "participant didn't use the same exact words to correct the command but the task was completed the same"
+          },
+          {
+            "scenario_id": "ambiguous_request",
+            "task_success": true,
+            "intent_understood": true,
+            "listening_state_clear": true,
+            "recovered_without_facilitator": true,
+            "predictability_rating": 4,
+            "feedback_rating": 5,
+            "access_barrier": "",
+            "safety_stop": false,
+            "completion_time_s": 45.0,
+            "note": "participant asked to bring the cup then when asked to clarify they said red cup and then had to confirm. They seemed to get a hang of it by this point"
+          },
+          {
+            "scenario_id": "alternate_modality",
+            "task_success": false,
+            "intent_understood": true,
+            "listening_state_clear": true,
+            "recovered_without_facilitator": true,
+            "predictability_rating": 2,
+            "feedback_rating": 2,
+            "access_barrier": "",
+            "safety_stop": false,
+            "completion_time_s": 90.0,
+            "note": "they tried typing in commands but since they were typing it normally without the proper syntax nothing was happening and they were very confused."
+          }
+        ]
+      },
+      "redesign": {
+        "participant_code": "P-2305",
+        "trials": [
+          {
+            "scenario_id": "clear_request",
+            "task_success": true,
+            "intent_understood": true,
+            "listening_state_clear": true,
+            "recovered_without_facilitator": true,
+            "predictability_rating": 5,
+            "feedback_rating": 5,
+            "access_barrier": "",
+            "safety_stop": false,
+            "completion_time_s": 10.0,
+            "note": "Move through this one pretty quickly because they knew what to expect"
+          },
+          {
+            "scenario_id": "no_response",
+            "task_success": true,
+            "intent_understood": true,
+            "listening_state_clear": true,
+            "recovered_without_facilitator": true,
+            "predictability_rating": 5,
+            "feedback_rating": 5,
+            "access_barrier": "",
+            "safety_stop": false,
+            "completion_time_s": 5.0,
+            "note": "This is always the same because there is nothing to really do when there is a timeout but they liked that listening command let them know that if there is a error or timeout that they need to put in the command again."
+          },
+          {
+            "scenario_id": "correction",
+            "task_success": true,
+            "intent_understood": true,
+            "listening_state_clear": true,
+            "recovered_without_facilitator": true,
+            "predictability_rating": 5,
+            "feedback_rating": 5,
+            "access_barrier": "",
+            "safety_stop": false,
+            "completion_time_s": 35.0,
+            "note": "This was slightly faster but there were no changes made for this particulary so I think it was just the user."
+          },
+          {
+            "scenario_id": "ambiguous_request",
+            "task_success": true,
+            "intent_understood": true,
+            "listening_state_clear": true,
+            "recovered_without_facilitator": true,
+            "predictability_rating": 5,
+            "feedback_rating": 5,
+            "access_barrier": "",
+            "safety_stop": false,
+            "completion_time_s": 45.0,
+            "note": "They followed what they did before so it wasn't any different"
+          },
+          {
+            "scenario_id": "alternate_modality",
+            "task_success": true,
+            "intent_understood": true,
+            "listening_state_clear": true,
+            "recovered_without_facilitator": true,
+            "predictability_rating": 5,
+            "feedback_rating": 5,
+            "access_barrier": "",
+            "safety_stop": false,
+            "completion_time_s": 60.0,
+            "note": "Since they had more time for commands it was a little easier but syntax is still an issue"
+          }
+        ]
+      },
+      "comparison": {
+        "baseline": {
+          "trial_count": 5,
+          "scenario_coverage": 5,
+          "valid_trials": 5,
+          "task_success_rate": 0.8,
+          "intent_comprehension_rate": 0.8,
+          "listening_clarity_rate": 1.0,
+          "recovery_rate": 1.0,
+          "mean_predictability": 3.6,
+          "mean_feedback_clarity": 4.0,
+          "access_barriers": 0,
+          "safety_stops": 0,
+          "mean_completion_time_s": 40.0
+        },
+        "redesign": {
+          "trial_count": 5,
+          "scenario_coverage": 5,
+          "valid_trials": 5,
+          "task_success_rate": 1.0,
+          "intent_comprehension_rate": 1.0,
+          "listening_clarity_rate": 1.0,
+          "recovery_rate": 1.0,
+          "mean_predictability": 5.0,
+          "mean_feedback_clarity": 5.0,
+          "access_barriers": 0,
+          "safety_stops": 0,
+          "mean_completion_time_s": 31.0
+        },
+        "matched_scenarios": 5,
+        "improved_metrics": [
+          "task_success_rate",
+          "intent_comprehension_rate",
+          "mean_predictability",
+          "mean_feedback_clarity"
+        ],
+        "participant_match": true
+      },
+      "checks": [
+        {
+          "label": "Matched participant and scenarios",
+          "passed": true,
+          "actual": [
+            true,
+            5
+          ],
+          "expected": "same code and 5 matched scenarios"
+        },
+        {
+          "label": "At least two implemented changes",
+          "passed": true,
+          "actual": 2,
+          "expected": ">= 2"
+        },
+        {
+          "label": "No regression in success",
+          "passed": true,
+          "actual": [
+            0.8,
+            1.0
+          ],
+          "expected": "redesign >= baseline"
+        },
+        {
+          "label": "At least two target metrics improve",
+          "passed": true,
+          "actual": [
+            "task_success_rate",
+            "intent_comprehension_rate",
+            "mean_predictability",
+            "mean_feedback_clarity"
+          ],
+          "expected": ">= 2"
+        },
+        {
+          "label": "No access barriers in retest",
+          "passed": true,
+          "actual": 0,
+          "expected": "0"
+        },
+        {
+          "label": "No safety-stop event",
+          "passed": true,
+          "actual": 0,
+          "expected": "0"
+        }
+      ],
+      "passed": true
+    }
+  }
+}
